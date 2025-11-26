@@ -28,8 +28,7 @@ const Navbar = () => {
               ))}
             </div>
         </div>
-        
-        <button className="text-center py-3 px-6 font-bold text-lg rounded-full border-2 border-black shadow-[5px_5px_0_0_rgba(0,0,0,1)]">Join Free</button>
+        <button className="text-center py-3 px-8 font-bold text-lg rounded-full border-3 border-black shadow-[5px_5px_0_0_rgba(0,0,0,1)]">Join Free</button>
     </nav>
   );
 };
