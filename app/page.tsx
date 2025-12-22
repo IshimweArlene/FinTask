@@ -5,6 +5,7 @@ import image3 from "@/public/photos/image5.png"
 import LandingComponent from "./components/landingpageComp";
 import Features from "./components/featuresComp";
 import FloatingCard1 from "./components/FloatingCards/card1";
+import FloatingCard2 from "./components/FloatingCards/card2";
 const Landing = () => {
   return (
     <div className="min-h-screen flex flex-col items-center">
@@ -49,8 +50,9 @@ const Landing = () => {
       <div>
         <Features />
         {/* <LandingComponent /> */}
-        <FloatingCard1/>
-
+        
+        {/* <FloatingCard1/> */}
+        <FloatingCard2/>
       </div>
     </div>
   );

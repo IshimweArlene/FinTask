@@ -1,16 +1,25 @@
-import { MoreHorizontal, Paperclip, MessageCircle } from "lucide-react";
+import { MoreHorizontal, Paperclip, MessageCircle, Flag } from "lucide-react";
 import image1 from "@/public/photos/image1.png";
 import image2 from "@/public/photos/image2.png";
-const FloatingCard1 = () => {
+const FloatingCard2 = () => {
     return (
-     <div className="relative -ml-[788px]">
-        <div className="w-96 bg-white absolute z-30 rounded-xl py-4 px-4 space-y-3 shadow-xs border-gray-300  -rotate-6">
+     <div className="relative ">
+        <div className="w-64 bg-white absolute z-30 rounded-xl py-4 px-4 shadow-xs border-gray-300  rotate-15">
             <div className="flex items-center gap-12 justify-between">
              <p className="font-extralight text-gray-400 text-md">Fintask</p>
-             <MoreHorizontal />
             </div>
             <div>
-                <h1 className="font-black text-xl">Web Visual Design</h1>
+                <h1 className="font-black text-xl mt-1 mb-3">UI Animations</h1>
+                <div className="bg-gray-200 w-full h-1 mt-2 rounded-3xl"></div>
+                <div className="bg-gray-200 w-1/3 mt-3 rounded-3xl h-1"></div>
+                <div className="flex gap-2 mt-8 border-b-2 border-gray-300 pb-4">
+                    <Flag fill="gray" color="gray" size={15}/>
+                    <p className="text-xs text-gray-600 mr-2"> Nov 10</p>
+                    <div className="bg-gray-200 p-1 ml-2 rounded-xs flex items-center">
+                        <div className="bg-gray-300 rounded-2xl h-1 w-12"></div>
+                    </div>
+                    <div className="bg-[rgba(255,209,90,0.32)] px-2.5"><p className="text-xs "> P2 🏆</p></div>
+                </div>
             </div>
             <div className="flex items-center gap-4 mt-2 justify-between">
                 <div className="relative flex items-center gap-2 bg-white rounded-full py-1 w-fit">
@@ -21,8 +30,6 @@ const FloatingCard1 = () => {
                     </span>
                 </div>
                 <div className="flex">
-                    <p className="text-xs font-serif">Style Guide</p>
-                    <p className="text-xs mr-3">🌈</p>
                     <p className="mr-1"><MessageCircle size={13} color="gray"/></p>
                     <p className="text-xs text-gray-500 mr-4">5</p>
                     <p className="mr-1"><Paperclip size={13} color="gray" /></p>
@@ -30,9 +37,9 @@ const FloatingCard1 = () => {
                 </div>
             </div>
         </div>
-        <div className="bg-[rgba(0,0,0,0.04)] w-64 h-34 rounded-2xl left-24 top-9 absolute"></div>
+        <div className="bg-[rgba(0,0,0,0.04)] w-64 h-60 rounded-xl -left-4 top-4 absolute"></div>
       </div>
     );
 }
  
-export default FloatingCard1;
+export default FloatingCard2;
