@@ -6,6 +6,8 @@ import LandingComponent from "./components/landingpageComp";
 import Features from "./components/featuresComp";
 import FloatingCard1 from "./components/FloatingCards/card1";
 import FloatingCard2 from "./components/FloatingCards/card2";
+import { SiNotion, SiSlack, SiTrello } from "react-icons/si";
+import { FaSlack } from "react-icons/fa";
 const Landing = () => {
   return (
     <div className="min-h-screen flex flex-col items-center">
@@ -49,10 +51,27 @@ const Landing = () => {
       </div>
       <div>
         <Features />
-        {/* <LandingComponent /> */}
-        
+        {/* <LandingComponent /> */}  
         {/* <FloatingCard1/> */}
-        <FloatingCard2/>
+        {/* <FloatingCard2/> */}
+      </div>
+      <div>
+        <h1>Our native plants are listed below integrations</h1>
+        <div className="flex gap-8">
+          <div className="flex items-center-">
+            <SiNotion size={40} color="black" />
+            <p>Notion</p>
+          </div>
+          
+          <div className="flex items-center-">
+            <FaSlack size={40} color="black" />
+            <p>Slack</p>
+          </div>
+          <div className="flex items-center-">
+            <SiTrello size={40} color="blue" />
+            <p>Trello</p>
+          </div>
+        </div>
       </div>
     </div>
   );
