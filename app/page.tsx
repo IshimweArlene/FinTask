@@ -3,6 +3,8 @@ import image1 from "@/public/photos/image1.png";
 import image2 from "@/public/photos/image2.png";
 import image3 from "@/public/photos/image5.png"
 import LandingComponent from "./components/landingpageComp";
+import Features from "./components/featuresComp";
+import FloatingCard1 from "./components/FloatingCards/card1";
 const Landing = () => {
   return (
     <div className="min-h-screen flex flex-col items-center">
@@ -45,7 +47,10 @@ const Landing = () => {
         <p className="mt-6 text-xl text-center flex gap-3">Excellent 4.9 out of 5 <span><img src= {image3.src} alt="image" /></span></p>
       </div>
       <div>
-        <LandingComponent />
+        <Features />
+        {/* <LandingComponent /> */}
+        <FloatingCard1/>
+
       </div>
     </div>
   );
