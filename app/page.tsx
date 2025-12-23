@@ -1,13 +1,20 @@
 import OverlappedImages from "./components/overlappedImages";
 import image1 from "@/public/photos/image1.png";
 import image2 from "@/public/photos/image2.png";
-import image3 from "@/public/photos/image5.png"
+import image3 from "@/public/photos/image5.png";
+import slack from "@/public/photos/slack.svg";
+import trello from "@/public/photos/trello.svg";
+import notion from "@/public/photos/notion.svg";
+import calendar from "@/public/photos/calendar.svg";
+import outlook from "@/public/photos/outlook.svg";
+import Image from "next/image";
 import LandingComponent from "./components/landingpageComp";
 import Features from "./components/featuresComp";
 import FloatingCard1 from "./components/FloatingCards/card1";
 import FloatingCard2 from "./components/FloatingCards/card2";
-import { SiNotion, SiSlack, SiTrello } from "react-icons/si";
-import { FaSlack } from "react-icons/fa";
+import Cards from "./components/FloatingCards/Cards";
+
+
 const Landing = () => {
   return (
     <div className="min-h-screen flex flex-col items-center">
@@ -55,22 +62,42 @@ const Landing = () => {
         {/* <FloatingCard1/> */}
         {/* <FloatingCard2/> */}
       </div>
-      <div>
-        <h1>Our native plants are listed below integrations</h1>
-        <div className="flex gap-8">
-          <div className="flex items-center-">
-            <SiNotion size={40} color="black" />
-            <p>Notion</p>
+      <div className="my-20">
+        <h1 className="text-2xl text-gray-500 my-8 text-center">Our native plants are listed below integrations</h1>
+        <div className="flex items-center gap-20 justify-between">
+          <div className="flex items-center">
+            <Image src={notion} alt="Notion" width={40} height={40} />
+            <p className="font-black text-2xl ml-2">Notion</p>
           </div>
-          
-          <div className="flex items-center-">
-            <FaSlack size={40} color="black" />
-            <p>Slack</p>
+          <div className="flex items-center">
+            <Image src={calendar} alt="Trello" width={40} height={40} />
+            <p className="text-2xl text-gray-600 ml-2">Calendar</p>
           </div>
-          <div className="flex items-center-">
-            <SiTrello size={40} color="blue" />
-            <p>Trello</p>
+          <div className="flex items-center">
+            <Image src={trello} alt="Trello" width={40} height={40} />
+            <p className="font-extrabold text-4xl text-gray-900 ml-2">Trello</p>
           </div>
+          <div className="flex items-center">
+            <Image src={slack} alt="Slack" width={40} height={40} />
+            <p className="font-black text-2xl ml-2">Slack</p>
+          </div>        
+          <div className="flex items-center">
+            <Image src={outlook} alt="Trello" width={40} height={40} />
+            <p className="text-blue-500 text-3xl font-black ml-2">Outlook</p>
+          </div>
+        </div>
+      </div>
+      <div className="items-center flex-col flex mt-12">
+        <div className="flex mb-4 items-center gap-3">
+          <div className="border-[rgba(252,79,36,1)] bg-[rgba(252,79,36,0.08)] border-4 w-5 h-5 rounded-full "></div>
+          <h1 className="caveat font-light strike text-gray-400 text-4xl ">Features</h1>
+        </div>
+        <div className="flex flex-col items-center">
+          <h1 className="text-6xl text-gray-900 font-bold">The features</h1>
+          <h1 className="text-6xl text-gray-900 font-bold mt-3">Both Familiar and new.</h1>
+        </div>
+        <div>
+          <Cards />
         </div>
       </div>
     </div>

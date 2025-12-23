@@ -1,2 +1,24 @@
 @import "tailwindcss";
 
+body {
+  font-family: var(--font-public);
+}
+
+.caveat {
+  font-family: var(--font-caveat);
+}
+
+.strike {
+  position: relative;
+  display: inline-block;
+}
+
+.strike::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 55%;          /* adjust this */
+  height: 1px;
+  background: currentColor;
+}
