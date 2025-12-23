@@ -27,19 +27,19 @@ const Cards = () => {
             <button onClick={() => setActive('month')} className={active == "month" ? "text-black font-semibold bg-white px-2 rounded-md" : "text-gray-400"}>Month</button>
           </div>
          </div>
-         <div className="flex items-center gap-2 pr-2">
+         <div className="flex items-center gap-4 pr-2">
           <h1 className="text-gray-400 text-xs">08:00 AM</h1>
           <div className="flex-1 h-[0.5px] bg-gray-300"></div>
          </div>
-         <div className="flex  items-center gap-4 w-fit">
+         <div className="flex ml-[66px] -mt-2 border-[rgba(243,176,255,1)] border-2 items-center gap-4 w-40 py-4 px-2 rounded-md bg-[rgba(252,233,255,1)]">
           <div>
-           <h1 className="text-[10px]">Fintask</h1>
-           <h1 className="text-sm font-black">Developement</h1>
+           <h1 className="text-[8px]">Fintask</h1>
+           <h1 className="text-xs font-black">Developement</h1>
           </div>
-          <div className="relative flex items-center gap-2 bg-white rounded-full py-1 w-fit">
-           <img src={image1.src} className="w-8 h-8 rounded-full" />
-           <img src={image2.src} className="w-6 h-6 rounded-full border-white border-2 -ml-5" />
-           <span className="text-sm h-10 w-10 rounded-full p-2 border-white border-4 font-semibold bg-white/20 backdrop-blur-md text-gray-700 -ml-4">3+</span>
+          <div className="relative flex items-center gap-2 bg-transparent rounded-full py-1 w-fit">
+           <img src={image1.src} className="w-[17px] h-[17px] rounded-full" />
+           <img src={image2.src} className="w-3.5 h-3.5 rounded-full border-white border-2 -ml-3" />
+           <span className="text-[6px] text-center flex justify-center items-center h-3.5 w-3.5 rounded-full  border-white border  font-semibold bg-white/20 backdrop-blur-md text-gray-700 -ml-3">3+</span>
           </div>
          </div>
         </div> 
