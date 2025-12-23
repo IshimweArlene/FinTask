@@ -101,13 +101,8 @@ const Cards = () => {
 
             <div className="relative flex items-center gap-2 bg-transparent rounded-full py-1 w-fit">
               <img src={image1.src} className="w-[17px] h-[17px] rounded-full" />
-              <img
-                src={image2.src}
-                className="w-3.5 h-3.5 rounded-full border-white border-2 -ml-3"
-              />
-              <span className="text-[6px] flex justify-center items-center h-3.5 w-3.5 rounded-full border-white border font-semibold bg-white/20 backdrop-blur-md text-gray-700 -ml-3">
-                3+
-              </span>
+              <img src={image2.src} className="w-3.5 h-3.5 rounded-full border-white border-2 -ml-3" />
+              <span className="text-[6px] flex justify-center items-center h-3.5 w-3.5 rounded-full border-white border font-semibold bg-white/20 backdrop-blur-md text-gray-700 -ml-3"> 3+ </span>
             </div>
           </div>
 
@@ -116,38 +111,29 @@ const Cards = () => {
             <div className="flex-1 h-[0.5px] bg-gray-300"></div>
           </div>
 
-          <div className="w-96 bg-white absolute z-30 rounded-xl py-4 px-4 space-y-3 shadow-xs border-gray-300">
+          <div className="w-52 bg-white absolute z-30 rounded-xl py-4 px-4 space-y-3 shadow-xs border-gray-300">
             <div className="flex items-center gap-12 justify-between">
-              <p className="font-extralight text-gray-400 text-md">Fintask</p>
+              <p className="font-extralight text-gray-400 text-[8px]">Fintask</p>
               <MoreHorizontal />
             </div>
 
             <div>
-              <h1 className="font-black text-xl">Web Visual Design</h1>
+              <h1 className="font-black text-xs">Web Visual Design</h1>
             </div>
 
             <div className="flex items-center gap-4 mt-2 justify-between">
-              <div className="relative flex items-center gap-2 bg-white rounded-full py-1 w-fit">
-                <img src={image1.src} className="w-8 h-8 rounded-full" />
-                <img
-                  src={image2.src}
-                  className="w-6 h-6 rounded-full border-white border-2 -ml-5"
-                />
-                <span className="text-sm h-10 w-10 rounded-full p-2 border-white border-4 font-semibold bg-white/20 backdrop-blur-md text-gray-700 -ml-4">
-                  3+
-                </span>
-              </div>
+              <div className="relative flex items-center gap-2 bg-transparent rounded-full py-1 w-fit">
+              <img src={image1.src} className="w-[17px] h-[17px] rounded-full" />
+              <img src={image2.src} className="w-3.5 h-3.5 rounded-full border-white border-2 -ml-3" />
+              <span className="text-[6px] flex justify-center items-center h-3.5 w-3.5 rounded-full border-white border font-semibold bg-white/20 backdrop-blur-md text-gray-700 -ml-3"> 3+ </span>
+            </div>
 
               <div className="flex">
-                <p className="text-xs font-serif">Style Guide</p>
-                <p className="text-xs mr-3">🌈</p>
-                <p className="mr-1">
-   <MessageCircle size={13} color="gray" />
-                </p>
+                <span className="text-[9px] rounded-sm bg-gray-300 p-1 font-serif">Visual</span>
+                <span className="text-[9px] rounded-sm bg-gray-300 p-1 font-serif mx-2">🏆</span>
+                <p className="mr-1"><MessageCircle size={10} color="gray" /></p>
                 <p className="text-xs text-gray-500 mr-4">5</p>
-                <p className="mr-1">
-                  <Paperclip size={13} color="gray" />
-                </p>
+                <p className="mr-1"><Paperclip size={10} color="gray" /></p>
                 <p className="text-xs text-gray-500">3</p>
               </div>
             </div>
