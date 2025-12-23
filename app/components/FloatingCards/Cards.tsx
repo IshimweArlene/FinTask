@@ -7,15 +7,15 @@ const Cards = () => {
  const [active, setActive] = useState<'day' | 'week' | 'month'>('day');
  return (
     <div>
-      <div className="w-96 bg-[rgba(252,252,232,1)] py-6 px-4 rounded-2xl">
-        <div className="flex items-center">
+      <div className="w-96 bg-[rgba(252,252,232,1)] pr-6 rounded-2xl">
+        <div className="flex items-center pt-6 pb-4 px-6">
           <div className="border-[rgba(252,79,36,1)] bg-[rgba(252,79,36,0.08)] border-4 w-5 h-5 rounded-full "></div>
-          <h1 className="text-3xl font-black ml-2">Task Progress</h1>
+          <h1 className="text-[26px] font-black ml-2">Task Progress</h1>
         </div>
         <div>
-            <p className="text-[20px] text-start text-gray-800 ml-8 mb-3.5">Send scheduling links guests love</p>
+          <p className="text-[19px] text-start text-gray-800 ml-12 mb-3.5">Send scheduling links guests love</p>
         </div>
-        <div className="bg-white">
+        <div className="bg-white p-3 rounded-r-2xl ">
          <div className="flex justify-between">
           <div className="flex items-center">
             <ChevronDown fill="black" size={18} className="rotate-270"/>
@@ -27,7 +27,7 @@ const Cards = () => {
             <button onClick={() => setActive('month')} className={active == "month" ? "text-black font-semibold bg-white px-2 rounded-md" : "text-gray-400"}>Month</button>
           </div>
          </div>
-         <div className="flex items-center gap-4 pr-2">
+         <div className="flex items-center gap-4 pr-2 mt-6">
           <h1 className="text-gray-400 text-xs">08:00 AM</h1>
           <div className="flex-1 h-[0.5px] bg-gray-300"></div>
          </div>
@@ -42,6 +42,7 @@ const Cards = () => {
            <span className="text-[6px] text-center flex justify-center items-center h-3.5 w-3.5 rounded-full  border-white border  font-semibold bg-white/20 backdrop-blur-md text-gray-700 -ml-3">3+</span>
           </div>
          </div>
+         
         </div> 
       </div>
     </div>
