@@ -9,9 +9,9 @@ const Cards = () => {
   const [active, setActive] = useState<"day" | "week" | "month">("day");
 
   return (
-    <div className="relative flex">
-      <div>
-        <div className="w-96 absolute z-30 bg-[rgba(252,252,232,1)] mt-24 pr-6 rounded-2xl">
+    <div className=" flex justify-evenly gap-24 items-center">
+      <div className="relative">
+        <div className="w-96  z-30 bg-[rgba(252,252,232,1)] mt-24 pr-6 rounded-2xl">
           <div className="flex items-center pt-6 pb-4 px-6">
             <div className="border-[rgba(252,79,36,1)] bg-[rgba(252,79,36,0.08)] border-4 w-5 h-5 rounded-full"></div>
             <h1 className="text-[26px] font-black ml-2">Task Progress</h1>
@@ -105,8 +105,8 @@ const Cards = () => {
         </div>
         <div className="bg-[rgba(0,0,0,0.03)] w-80 h-[395px] rounded-2xl absolute z-10 top-48 -left-8 -rotate-6"></div>
       </div>
-      <div>
-          <div className="w-96 absolute z-30 bg-[rgba(252,252,232,1)] mt-24 pr-6 rounded-2xl">
+      <div className="relative">
+          <div className="w-96 z-30 bg-[rgba(252,252,232,1)] mt-24 pr-6 rounded-2xl">
           <div className="flex items-center pt-6 pb-4 px-6">
             <div className="border-[rgba(252,79,36,1)] bg-[rgba(252,79,36,0.08)] border-4 w-5 h-5 rounded-full"></div>
             <h1 className="text-[26px] font-black ml-2">Task Progress</h1>
@@ -200,8 +200,9 @@ const Cards = () => {
         </div>
         <div className="bg-[rgba(0,0,0,0.03)] w-80 h-[395px] rounded-2xl absolute z-10 top-48 -left-8 -rotate-6"></div>
       </div>
-      <div>
-         <div className="w-96 absolute z-30 bg-[rgba(252,252,232,1)] mt-24 pr-6 rounded-2xl">
+
+      <div className="relative">
+         <div className="w-96  z-30 bg-[rgba(252,252,232,1)] mt-24 pr-6 rounded-2xl">
           <div className="flex items-center pt-6 pb-4 px-6">
             <div className="border-[rgba(252,79,36,1)] bg-[rgba(252,79,36,0.08)] border-4 w-5 h-5 rounded-full"></div>
             <h1 className="text-[26px] font-black ml-2">Task Progress</h1>
