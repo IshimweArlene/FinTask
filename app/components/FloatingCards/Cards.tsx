@@ -1,6 +1,9 @@
+"use client";
+import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 const Cards = () => {
+ const [active, setActive] = useState<'day' | 'week' | 'month'>('day');
  return (
     <div>
       <div className="w-96 bg-[rgba(252,252,232,1)] py-6 px-4 rounded-2xl">
@@ -15,6 +18,11 @@ const Cards = () => {
           <div className="flex items-center">
             <ChevronDown fill="black" size={18} className="rotate-270"/>
             <p className="text-[13px] font-bold"> November 15</p>
+          </div>
+          <div className="bg-gray-300 w-fit flex items-center p-2 gap-3 rounded-xl">
+            <button onClick={() => setActive('day')} className={active == "day" ? "text-black font-semibold bg-white px-2 rounded-md" : "text-gray-400"}>Day</button>
+            <button onClick={() => setActive('week')} className={active == "week" ? "text-black font-semibold bg-white px-2 rounded-md" : "text-gray-400"}>Week</button>
+            <button onClick={() => setActive('month')} className={active == "month" ? "text-black font-semibold bg-white px-2 rounded-md" : "text-gray-400"}>Month</button>
           </div>
         </div>
       </div>
