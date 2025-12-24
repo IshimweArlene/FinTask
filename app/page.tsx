@@ -111,7 +111,7 @@ const Landing = () => {
           <h1 className="text-6xl text-gray-900 font-bold mt-3"> trust for teams</h1>
           <p className="text-[20px] my-7 text-gray-700 font-medium">Plan projects, stay on track, and deliver on time without overworking your team.</p>
         </div>
-        <button className="bg-[rgba(151,91,236,1)] flex items-center gap-6 py-4 px-9 font-bold text-white text-lg rounded-full border-4 border-[rgba(115,69,179,1)] shadow-[5px_5px_0_0_rgba(115,69,179,1)]">
+        <button className="bg-[rgba(151,91,236,1)] mb-16 flex items-center gap-6 py-4 px-9 font-bold text-white text-lg rounded-full border-4 border-[rgba(115,69,179,1)] shadow-[5px_5px_0_0_rgba(115,69,179,1)]">
           <div className="border-4 w-5 h-5 border-white rounded-full"></div>
           Get Start
         </button>
