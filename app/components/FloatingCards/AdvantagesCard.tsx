@@ -1,10 +1,10 @@
-import { DumbbellIcon } from "lucide-react";
+import { DumbbellIcon, MoreHorizontal } from "lucide-react";
 import frame from "@/public/photos/Frame 217.svg";
 import Image from "next/image";
 const AdvantagesCard = () => {
   return (
     <div>
-      <div className="grid grid-cols-2 bg-[rgba(252,79,36,1)] p-4 rounded-2xl">
+      <div className="grid grid-cols-2 gap-8 bg-[rgba(252,79,36,1)] p-4 rounded-2xl">
         <div>
           <div className="flex gap-4 space-y-6 items-center justify-center ">
             <div className="flex flex-col gap-4 items-center">
@@ -33,11 +33,21 @@ const AdvantagesCard = () => {
         </div>
         <div>
           <div>
-            <div className="grid grid-cols-2">
-              <div className="flex flex-col gap-4 items-center">
+            <div className="grid grid-cols-2 bg-white rounded-2xl py-8 px-12 mt-12">
+              <div className="flex flex-col gap-4 items-start">
                 <div className="flex">
-                  
+                  <p className="text-gray-900 text-xl">🎒 New project</p>
                 </div>
+                <h1 className="text-3xl mb-8 font-semibold">Fintask Web</h1>
+                <div className="border-gray-300/50 border-[0.2px] px-4 py-4 rounded-xl">
+                  <div className="flex items-center justify-between">
+                    <p className="text-gray-700 text-lg">Fintask</p>
+                    <MoreHorizontal className="text-black " size={20} />
+                  </div>
+                  <h1 className="text-2xl mb-4 font-semibold">Bug Fix</h1>
+                  <p className="text-gray-700 mb-4">Micro interactions, Loading and Progress, Navigation.</p>
+                  <div></div>
+                </div> 
               </div>
             </div>
           </div>
