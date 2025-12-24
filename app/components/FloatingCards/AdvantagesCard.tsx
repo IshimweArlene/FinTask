@@ -1,4 +1,4 @@
-import { DumbbellIcon, MoreHorizontal } from "lucide-react";
+import { DumbbellIcon, MoreHorizontal, Flag } from "lucide-react";
 import frame from "@/public/photos/Frame 217.svg";
 import Image from "next/image";
 const AdvantagesCard = () => {
@@ -46,7 +46,16 @@ const AdvantagesCard = () => {
                   </div>
                   <h1 className="text-2xl mb-4 font-semibold">Bug Fix</h1>
                   <p className="text-gray-700 mb-4">Micro interactions, Loading and Progress, Navigation.</p>
-                  <div></div>
+                  <div className="flex items-center gap-4">
+                    <Flag size={20} color="gray" fill="gray"/>
+                    <p className="text-gray-500 text-lg ">Jan 05</p>
+                    <div className="bg-[rgba(236,91,1,0.2)] p-2">
+                      <p className="text-black ">2 Bugs 🐞</p>
+                    </div>
+                    <div className="bg-[rgba(255,209,90,0.32)] p-2">
+                      <p className="text-black ">Error ⚠️</p>
+                    </div>
+                  </div>
                 </div> 
               </div>
             </div>
