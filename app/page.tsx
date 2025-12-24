@@ -13,6 +13,7 @@ import Features from "./components/featuresComp";
 import FloatingCard1 from "./components/FloatingCards/card1";
 import FloatingCard2 from "./components/FloatingCards/card2";
 import Cards from "./components/FloatingCards/Cards";
+import AdvantagesCard from "./components/FloatingCards/AdvantagesCard";
 
 
 const Landing = () => {
@@ -98,6 +99,24 @@ const Landing = () => {
         </div>
         <div>
           <Cards />
+        </div>
+      </div>
+      <div className="items-center flex-col flex mt-32">
+        <div className="flex mb-4 items-center gap-3">
+          <div className="border-[rgba(151,91,236,1)] bg-[rgba(151,91,236,0.08)] border-4 w-5 h-5 rounded-full "></div>
+          <h1 className="caveat font-light strike text-gray-400 text-4xl ">Advantages</h1>
+        </div>
+        <div className="flex flex-col items-center">
+          <h1 className="text-6xl text-gray-900 font-bold">A task manager you can</h1>
+          <h1 className="text-6xl text-gray-900 font-bold mt-3"> trust for teams</h1>
+          <p className="text-[20px] my-7 text-gray-700 font-medium">Plan projects, stay on track, and deliver on time without overworking your team.</p>
+        </div>
+        <button className="bg-[rgba(151,91,236,1)] flex items-center gap-6 py-4 px-9 font-bold text-white text-lg rounded-full border-4 border-[rgba(115,69,179,1)] shadow-[5px_5px_0_0_rgba(115,69,179,1)]">
+          <div className="border-4 w-5 h-5 border-white rounded-full"></div>
+          Get Start
+        </button>
+        <div>
+          <AdvantagesCard />
         </div>
       </div>
     </div>
