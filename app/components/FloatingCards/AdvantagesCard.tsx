@@ -7,7 +7,7 @@ import FloatingCard2 from "./card2";
 const AdvantagesCard = () => {
   return (
     <div className="px-28 relative my-12">
-      <div className="relative grid grid-cols-2 bg-[rgba(252,79,36,1)] h-[489px] z-30 rounded-2xl overflow-hidden">
+      <div className="relative grid grid-cols-2 gap-8 bg-[rgba(252,79,36,1)] h-[490px] py-4 pl-4 z-30 rounded-2xl">
         <div className="flex flex-col items-start">
           <div className="flex gap-4 space-y-6 items-center justify-center ">
             <div className="flex flex-col gap-4 items-center">
@@ -36,8 +36,8 @@ const AdvantagesCard = () => {
         </div>
         <div>
           <div className="relative">
-            <div className="absolute inset-0 left-1/2 z-10 bg-[rgba(255,255,255,0.18)] -translate-x-1/2 w-[200%]"></div>
-            <div className="absolute inset-0 left-1/2 z-30 bg-white rounded-l-2xl py-8 px-12">
+            <div className="inset-0 absolute rounded-2xl z-10 bg-[rgba(255,255,255,0.18)] scale-x-115"></div>
+            <div className="absolute top-0 bottom-0 z-30 bg-white rounded-2xl py-8 px-12 mt-12 ">
               <div className="flex flex-col gap-4 items-start">
                 <div className="flex">
                   <p className="text-gray-900 text-xl">🎒 New project</p>
