@@ -37,7 +37,7 @@ const ProjectsCard = () => {
         </div>
         <div>
           <div className="flex flex-col bg-[rgba(255,255,255,0.96)] rounded-2xl py-8 px-12 h-[430px] rounded-b-none mt-8">
-            <div className="grid grid-cols-2 ">
+            <div className="grid grid-cols-2 gap-6">
               <div>
                 <div className="bg-[rgba(255,255,255,1)] px-4 py-2 space-y-2 rounded-xl flex items-center">
                   <div className="bg-[rgba(245,245,245,1)] rounded-full p-3">
@@ -46,7 +46,7 @@ const ProjectsCard = () => {
                   <div>
                     <h1 className="text-xl font-semibold ml-4">Notions</h1>
                     <div className="flex items-center gap-3.5">
-                      <div className="w-36 h-3 bg-[rgba(151,91,236,0.12)] ml-4">
+                      <div className="w-36 h-2 bg-[rgba(151,91,236,0.12)] ml-4">
                         <div className="h-full bg-[rgba(151,91,236,1)] transition-all" style={{ width: "80%" }}/>
                       </div>
                       <p className="font-black text-sm">80%</p>
@@ -55,13 +55,13 @@ const ProjectsCard = () => {
                 </div>
                 <div className="bg-[rgba(255,255,255,1)] px-4 py-2 space-y-2 rounded-xl mt-5 flex items-center">
                   <div className="bg-[rgba(245,245,245,1)] rounded-full p-3">
-                    <Image src={Notion} alt="Notion" />
+                    <Image src={Trello} alt="Notion" />
                   </div>
                   <div>
-                    <h1 className="text-xl font-semibold ml-4">Notions</h1>
+                    <h1 className="text-xl font-semibold ml-4">Trello</h1>
                     <div className="flex items-center gap-3.5">
-                      <div className="w-36 h-3 bg-[rgba(151,91,236,0.12)] ml-4">
-                        <div className="h-full bg-[rgba(151,91,236,1)] transition-all" style={{ width: "80%" }}/>
+                      <div className="w-36 h-2 bg-[rgba(255,209,90,0.12)] ml-4">
+                        <div className="h-full bg-[rgba(255,209,90,1)] transition-all" style={{ width: "80%" }}/>
                       </div>
                       <p className="font-black text-sm">80%</p>
                     </div>
@@ -69,7 +69,33 @@ const ProjectsCard = () => {
                 </div>
               </div>
               <div>
-                
+                <div className="bg-[rgba(255,255,255,1)] stretch rounded-xl flex items-center">
+                  <div className="bg-white p-8 rounded-2xl w-fit">
+                  <div className="relative w-[420px] h-[90px]">
+                    <div className="absolute inset-0 bg-green-900 rounded-2xl z-10" />
+                    <div className="absolute inset-0 translate-x-6 bg-purple-300 rounded-2xl z-20" />
+                    <div className="absolute inset-0 translate-x-12 bg-yellow-300 rounded-2xl z-30" />
+                    <div className="absolute inset-0 translate-x-16 bg-orange-500 rounded-2xl z-40" />
+                  </div>
+
+                  {/* legend */}
+                  <div className="flex gap-6 mt-6 text-sm">
+                    <span className="flex items-center gap-2">
+                      <span className="w-2 h-2 bg-green-900 rounded-full" /> Complete
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <span className="w-2 h-2 bg-purple-300 rounded-full" /> Progress
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <span className="w-2 h-2 bg-yellow-300 rounded-full" /> Pending
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full" /> Not Started
+                    </span>
+                  </div>
+                </div>
+
+                </div>
               </div>
             </div>
           </div>
