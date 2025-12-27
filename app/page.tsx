@@ -14,7 +14,7 @@ import FloatingCard1 from "./components/FloatingCards/card1";
 import FloatingCard2 from "./components/FloatingCards/card2";
 import Cards from "./components/FloatingCards/Cards";
 import AdvantagesCard from "./components/FloatingCards/AdvantagesCard";
-
+import ProjectsCard from "./components/FloatingCards/ProjectsCard";
 
 const Landing = () => {
   return (
@@ -117,6 +117,7 @@ const Landing = () => {
         </button>
         <div>
           <AdvantagesCard />
+          <ProjectsCard />
         </div>
       </div>
     </div>
