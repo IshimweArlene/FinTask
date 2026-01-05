@@ -135,7 +135,7 @@ const AdvantagesCard = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bg-[rgba(0,0,0,0.05)] scale-x-65 rounded-2xl z-0 rotate-4 right-6 translate-x-44 translate-y-8 inset-0"></div>
+      <div className="absolute bg-[rgba(0,0,0,0.05)] scale-x-65 rounded-4xl z-0 rotate-4 right-6 translate-x-44 translate-y-8 inset-0"></div>
     </div>
   );
 }
