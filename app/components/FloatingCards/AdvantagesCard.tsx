@@ -7,7 +7,7 @@ const AdvantagesCard = () => {
   return (
     <div className="px-28 relative my-12">
       <div className="relative grid grid-cols-2 gap-8 bg-[rgba(252,79,36,1)] h-[490px] py-8 pl-4 z-30 rounded-2xl">
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-start h-full">
           <div className="flex gap-4 space-y-6 items-center justify-center ">
             <div className="flex flex-col gap-4 items-center">
               <div className="border-[rgba(255,255,255,1)] bg-[rgba(255,255,255,0.2)] border-5 w-7 h-7 ml-2 mt-12  rounded-full "></div>

@@ -93,13 +93,16 @@ const ProjectsCard = () => {
                     </span>
                     <span className="flex items-center gap-1">
                       <span className="w-1.5 h-1.5 bg-[rgba(252,79,36,1)] rounded-full" />
-                      <p className="text-[9px]">Not Started</p>
+                      <span className="text-[9px]">Not</span>
+                      <span className="text-[9px]">Started</span>
                     </span>
                   </div>
                 </div>
-
                 </div>
               </div>
+            </div>
+            <div className="grid grid-cols-2">
+
             </div>
           </div>
         </div>
