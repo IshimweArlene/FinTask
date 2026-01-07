@@ -60,7 +60,7 @@ const ProjectsCard = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-[rgba(255,255,255,1)]  space-y-5 rounded-xl flex items-center mt-5">
+                <div className="bg-[rgba(255,255,255,1)]  space-y-4.5 rounded-xl flex items-center mt-5">
                   <div className="bg-[rgba(245,245,245,1)] rounded-full w-fit h-fit p-2 ml-2 mt-2">
                     <Image src={Trello} alt="Trello" className="w-10 h-10" />
                   </div>
@@ -157,7 +157,7 @@ const ProjectsCard = () => {
                   <div className="flex-1 h-[0.5px] bg-gray-300"></div>
                 </div>
 
-                <div className="w-fit ml-24 -mt-12 bg-[rgba(253,254,225,1)] rounded-lg py-2 px-2 space-y-1 border border-[rgba(248,255,31,1)]">
+                <div className="w-fit ml-24 -mt-12 relative z-10 bg-[rgba(253,254,225,1)] rounded-lg py-2 px-2 space-y-1 border border-[rgba(248,255,31,1)]">
                   <div className="flex items-center  justify-between">
                     <p className="font-extralight text-gray-400 text-[7px]">Fintask</p>
                     <MoreHorizontal size={11} className="font-black"/>
@@ -165,10 +165,10 @@ const ProjectsCard = () => {
                   <div>
                     <h1 className="font-black text-[9.5px]">Web Visual Design</h1>
                   </div>
-                  <div className="flex items-center gap-4 mt-2 justify-between">
-                    <div className="relative flex items-center gap-2 bg-transparent rounded-full py-1 w-fit">
-                      <img src={image1.src} className="w-[17px] h-[17px] rounded-full" />
-                      <img src={image2.src} className="w-3.5 h-3.5 rounded-full border-white border-2 -ml-3" />
+                  <div className="flex items-center gap-4 mt-1 justify-between">
+                    <div className="relative flex items-center  gap-2 bg-transparent rounded-full py-1 w-fit">
+                      <img src={image1.src} className="w-4 h-4 rounded-full" />
+                      <img src={image2.src} className="w-3 h-3 rounded-full border-white border-2 -ml-3" />
                       <span className="text-[6px] flex justify-center items-center h-3.5 w-3.5 rounded-full border-white border font-semibold bg-white/20 backdrop-blur-md text-gray-700 -ml-3"> 3+ </span>
                     </div>
                     <div className="flex items-center">
