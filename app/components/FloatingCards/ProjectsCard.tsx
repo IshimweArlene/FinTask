@@ -195,21 +195,11 @@ const ProjectsCard = () => {
 
                     {/* Bars container */}
                     <div className="flex-1 flex items-end justify-around gap-4 h-full ml-4" style={{ height: '200px' }}>
-                      {/* First Bar - Orange/Peach */}
-                      <div className="flex flex-col items-center h-full relative">
-                        <div className="relative w-12 h-full flex items-end">
-                          <div className="w-full relative h-full flex flex-col justify-end">
-                            {/* Orange bottom section */}
-                            <div className="bg-[rgba(252,79,36,1)] rounded-t-lg" style={{ height: '90px' }}></div>
-                            {/* Peach top section */}
-                            <div className="bg-[rgba(255,209,180,0.6)] rounded-t-lg" style={{ height: '10px' }}></div>
-                          </div>
-                        </div>
+                      <div className="relative h-36 w-2.5 bg-[rgba(255,209,90,0.12)] ml-4 rounded-lg overflow-hidden">
+                        <div className="absolute bottom-0 w-full bg-[rgba(255,209,90,1)] transition-all rounded-lg" style={{ height: "60%" }}/>
                       </div>
 
-                      {/* Second Bar - Dark Green with Tooltip */}
                       <div className="flex flex-col items-center relative h-full">
-                        {/* Tooltip */}
                         <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 z-50">
                           <p className="text-[7px] font-semibold text-gray-700 mb-1 text-center">David</p>
                           <div className="bg-green-100 text-gray-700 text-[8px] px-2 py-1 rounded whitespace-nowrap relative">
@@ -224,18 +214,13 @@ const ProjectsCard = () => {
                         </div>
                       </div>
 
-                      {/* Third Bar - Light Purple */}
-                      <div className="flex flex-col items-center h-full">
-                        <div className="relative w-12 h-full flex items-end">
-                          <div className="w-full bg-[rgba(243,176,255,1)] rounded-t-lg" style={{ height: '156px' }}></div>
-                        </div>
+                      <div className="relative h-36 w-2.5 bg-[rgba(255,209,90,0.12)] ml-4 rounded-lg overflow-hidden">
+                        <div className="absolute bottom-0 w-full bg-[rgba(255,209,90,1)] transition-all rounded-lg" style={{ height: "60%" }}/>
                       </div>
 
-                      {/* Fourth Bar - Yellow/Cream */}
                       <div className="flex flex-col items-center h-full">
                         <div className="relative w-12 h-full flex items-end">
                           <div className="w-full relative h-full flex flex-col justify-end">
-                            {/* Yellow bottom section */}
                             <div className="bg-[rgba(255,209,90,1)] rounded-t-lg" style={{ height: '180px' }}></div>
                             {/* Cream top section */}
                             <div className="bg-[rgba(255,240,200,0.6)] rounded-t-lg" style={{ height: '10px' }}></div>
