@@ -118,7 +118,7 @@ const ProjectsCard = () => {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-2">
+            <div className="grid grid-cols-2 gap-4">
               <div className="bg-[rgba(255,255,255,1)] px-2 pb-2 rounded-2xl">
                 <div className="flex items-center gap-4 pr-2 mt-6">
                   <h1 className="text-gray-400 text-[8.5px] ">08:00 AM</h1>
@@ -181,6 +181,9 @@ const ProjectsCard = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+              <div className="bg-[rgba(255,255,255,1)] rounded-2xl mt-2">
+
               </div>
             </div>
           </div>
