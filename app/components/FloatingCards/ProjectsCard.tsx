@@ -5,10 +5,17 @@ import image1 from "@/public/photos/image1.png";
 import image2 from "@/public/photos/image2.png";
 import Notion from "@/public/photos/notion.svg";
 import Trello from "@/public/photos/trello.svg";
+import rect1 from "@/public/photos/rect1.svg";
+import rect2 from "@/public/photos/rect2.svg";
+import rect3 from "@/public/photos/rect3.svg";
+import rect4 from "@/public/photos/rect4.svg";
+import rect5 from "@/public/photos/rect5.svg";
+import { MoreHorizontal, Paperclip, MessageCircle } from "lucide-react";
+
 const ProjectsCard = () => {
   return (
-    <div className="px-28 relative my-12" >
-      <div className="relative grid grid-cols-2 gap-8 bg-[rgba(20,80,26,1)] h-[490px] py-8 pl-4 z-30 mt-32 rounded-2xl">
+    <div className="pl-24 pr-20 relative" >
+      <div className="relative grid grid-cols-2 gap-8 bg-[rgba(20,80,26,1)] w-full h-[490px] py-8 pl-4 z-30 mt-32 rounded-4xl">
         <div className="flex flex-col items-start">
           <div className="flex gap-4 space-y-6 items-center justify-center ">
             <div className="flex flex-col gap-4 items-center">
@@ -36,11 +43,11 @@ const ProjectsCard = () => {
           </div>
         </div>
         <div>
-          <div className="flex flex-col bg-[rgba(255,255,255,0.96)] rounded-2xl py-8 px-12 h-[430px] rounded-b-none mt-8">
-            <div className="grid grid-cols-2 gap-6">
+          <div className="flex flex-col bg-[rgba(255,255,255,0.96)] rounded-2xl py-8 px-12 min-h-[430px] rounded-b-none mt-8">
+            <div className="grid grid-cols-2 gap-6 ">
               <div>
-                <div className="bg-[rgba(255,255,255,1)]  space-y-2 rounded-xl flex items-center">
-                  <div className="bg-[rgba(245,245,245,1)]  rounded-full p-3">
+                <div className="bg-[rgba(255,255,255,1)]  space-y-5 rounded-xl flex items-center ">
+                  <div className="bg-[rgba(245,245,245,1)]  rounded-full w-fit h-fit p-2 ml-2 mt-2">
                     <Image src={Notion} alt="Notion" className="w-10 h-10"/>
                   </div>
                   <div>
@@ -49,12 +56,12 @@ const ProjectsCard = () => {
                       <div className="w-36 h-2.5 bg-[rgba(151,91,236,0.12)] ml-4 rounded-lg">
                         <div className="h-full bg-[rgba(151,91,236,1)] transition-all rounded-lg" style={{ width: "80%" }}/>
                       </div>
-                      <p className="font-black text-md">80%</p>
+                      <p className="font-black text-md mr-2">80%</p>
                     </div>
                   </div>
                 </div>
-                <div className="bg-[rgba(255,255,255,1)]  space-y-2 rounded-xl mt-5 flex items-center">
-                  <div className="bg-[rgba(245,245,245,1)] rounded-full p-3 ">
+                <div className="bg-[rgba(255,255,255,1)]  space-y-5 rounded-xl flex items-center mt-5">
+                  <div className="bg-[rgba(245,245,245,1)] rounded-full w-fit h-fit p-2 ml-2 mt-2">
                     <Image src={Trello} alt="Trello" className="w-10 h-10" />
                   </div>
                   <div>
@@ -63,46 +70,118 @@ const ProjectsCard = () => {
                       <div className="w-36 h-2.5 bg-[rgba(255,209,90,0.12)] ml-4 rounded-lg">
                         <div className="h-full bg-[rgba(255,209,90,1)] transition-all rounded-lg" style={{ width: "60%" }}/>
                       </div>
-                      <p className="font-black text-md">60%</p>
+                      <p className="font-black text-md mr-2">60%</p>
                     </div>
                   </div>
                 </div>
               </div>
               <div>
-                <div className="bg-[rgba(255,255,255,1)]  rounded-xl flex items-center">
-                  <div className="bg-white p-8 rounded-2xl">
-                  <div className="relative w-32 h-20">
-                    <div className="absolute inset-0 bg-[rgba(20,80,26,1)] rounded-2xl z-50" />
-                    <div className="absolute inset-0 translate-x-8 bg-[rgba(243,176,255,1)] rounded-2xl z-40" />
-                    <div className="absolute inset-0 translate-x-15 bg-[rgba(255,209,90,1)]  rounded-2xl z-30" />
-                    <div className="absolute inset-0 translate-x-19 bg-[rgba(252,79,36,1)] rounded-2xl z-20" />
-                    <div className="absolute inset-0 scale-y-60 translate-x-23  bg-[rgba(252,79,36,1)] rounded-xl z-10" />
+                <div className="bg-[rgba(255,255,255,1)] rounded-2xl p-2 min-w-0 flex items-center overflow-visible">
+                  <div className="bg-white px-2 py-8 rounded-2xl w-full max-w-full min-w-0">
+                    <div className="relative w-full h-20 flex items-center">
+                      <div className="absolute -top-6 left-24 z-60 bg-gray-200 text-gray-700 text-[7px] px-2 py-1 rounded whitespace-normal">
+                        <p className="font-bold text-[9px]">Progress</p>
+                        Complete almost <span className="font-semibold">90%</span>
+                        <div className="absolute bottom-0 left-12 transform translate-y-full">
+                          <div className="w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-200"></div>
+                        </div>
+                      </div>
+                      <div className="relative w-32 h-20">
+                        <Image src={rect1} alt="rect1" className="absolute inset-0 rounded-xl z-50 h-18 w-auto object-cover" />
+                        <Image src={rect2} alt="rect2" className="absolute inset-0 translate-x-8 rounded-xl z-40 h-18 w-auto object-cover" />
+                        <Image src={rect3} alt="rect3" className="absolute inset-0 translate-x-14 rounded-xl z-30 h-18 w-auto object-cover" />
+                        <Image src={rect4} alt="rect4" className="absolute inset-0 translate-x-16 rounded-xl z-20 h-18 w-auto object-cover" />
+                        <Image src={rect5} alt="rect5" className="absolute inset-0 translate-x-19 rounded-xl z-10 h-18 w-auto object-cover" />
+                        <Image src={rect5} alt="rect5" className="absolute inset-0 translate-x-28 top-4 rounded-md z-10 h-10 w-auto object-cover" />
+
+                      </div>
+                    </div>
+                    <div className="flex gap-3 mt-6 text-sm flex-wrap">                      
+                      <span className="flex items-center gap-1">
+                        <span className="w-1.5 h-1.5 bg-[rgba(20,80,26,1)] rounded-full" />
+                        <p className="text-[7.5px] font-semibold whitespace-normal">Complete</p>
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <span className="w-1.5 h-1.5 bg-[rgba(243,176,255,1)] rounded-full" />
+                        <p className="text-[7.5px] font-semibold whitespace-normal">Progress</p>
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <span className="w-1.5 h-1.5 bg-[rgba(255,209,90,1)] rounded-full" />
+                        <p className="text-[7.5px] font-semibold whitespace-normal">Pending</p>
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <span className="w-1.5 h-1.5 bg-[rgba(252,79,36,1)] rounded-full" />
+                        <p className="text-[7.5px] font-semibold whitespace-normal">Not Started</p>
+                      </span>
+                    </div>
                   </div>
-                  <div className="flex gap-6 mt-6 text-sm">
-                    <span className="flex items-center gap-1">
-                      <span className="w-1.5 h-1.5 bg-[rgba(20,80,26,1)] rounded-full" />
-                      <p className="text-[9.7px]">Complete</p>
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <span className="w-1.5 h-1.5 bg-[rgba(243,176,255,1)] rounded-full" />
-                      <p className="text-[9.7px]">Progress</p>
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <span className="w-1.5 h-1.5 bg-[rgba(255,209,90,1)] rounded-full" />
-                      <p className="text-[9.7px]">Pending</p>
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <span className="w-1.5 h-1.5 bg-[rgba(252,79,36,1)] rounded-full" />
-                      <span className="text-[9px]">Not</span>
-                      <span className="text-[9px]">Started</span>
-                    </span>
-                  </div>
-                </div>
                 </div>
               </div>
             </div>
             <div className="grid grid-cols-2">
+              <div className="bg-[rgba(255,255,255,1)] p-2">
+                <div className="flex items-center gap-4 pr-2 mt-6">
+                  <h1 className="text-gray-400 text-[8.5px] ">08:00 AM</h1>
+                  <div className="flex-1 h-[0.5px] bg-gray-300"/>
+                </div>
+                <div className="flex ml-[66px] -mt-2 border-[rgba(243,176,255,1)] border-2 items-center gap-4  py-2 px-1 w-fit rounded-md bg-[rgba(252,233,255,1)]">
+                  <div>
+                    <h1 className="text-[8px] text-gray-700">Fintask</h1>
+                    <h1 className="text-[10px] whitespace-break-spaces font-black">Developement</h1>
+                  </div>
+                  <div className="relative flex items-center gap-2 bg-transparent rounded-full py-1 w-fit">
+                    <img src={image1.src} className="w-4 h-4 rounded-full" />
+                    <img src={image2.src} className="w-3 h-3 rounded-full border-white border-2 -ml-3" />
+                    <span className="text-[6px] flex justify-center items-center h-3.5 w-3.5 rounded-full border-white border font-semibold bg-white/20 backdrop-blur-md text-gray-700 -ml-3">3+ </span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 pr-2 mt-6">
+                  <h1 className="text-gray-400 text-[8.5px]">10:00 AM</h1>
+                  <div className="flex-1 h-[0.5px] bg-gray-300"></div>
+                </div>
 
+                <div className="flex ml-36 -mt-8 border-[rgba(167,195,209,1)] border-2 items-center gap-4 w-40 py-2 px-2 rounded-xs bg-[rgba(225,251,254,1)]">
+                  <div>
+                    <h1 className="text-[8px]">Fintask</h1>
+                    <h1 className="text-xs font-black">Ux copywrite</h1>
+                  </div>
+                  <div className="relative flex items-center gap-2 bg-transparent rounded-full py-1 w-fit">
+                    <img src={image1.src} className="w-[17px] h-[17px] rounded-full" />
+                    <img src={image2.src} className="w-3.5 h-3.5 rounded-full border-white border-2 -ml-3" />
+                    <span className="text-[6px] flex justify-center items-center h-3.5 w-3.5 rounded-full border-white border font-semibold bg-white/20 backdrop-blur-md text-gray-700 -ml-3">3+</span>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4 pr-2 mt-12">
+                  <h1 className="text-gray-400 text-xs">12:00 PM</h1>
+                  <div className="flex-1 h-[0.5px] bg-gray-300"></div>
+                </div>
+
+                <div className="w-[172px] ml-24 -mt-12 bg-[rgba(253,254,225,1)] rounded-xl py-2 px-2 space-y-1 border border-[rgba(248,255,31,1)]">
+                  <div className="flex items-center gap-12 justify-between">
+                    <p className="font-extralight text-gray-400 text-[8px]">Fintask</p>
+                    <MoreHorizontal />
+                  </div>
+                  <div>
+                    <h1 className="font-black text-xs">Web Visual Design</h1>
+                  </div>
+                  <div className="flex items-center gap-4 mt-2 justify-between">
+                    <div className="relative flex items-center gap-2 bg-transparent rounded-full py-1 w-fit">
+                      <img src={image1.src} className="w-[17px] h-[17px] rounded-full" />
+                      <img src={image2.src} className="w-3.5 h-3.5 rounded-full border-white border-2 -ml-3" />
+                      <span className="text-[6px] flex justify-center items-center h-3.5 w-3.5 rounded-full border-white border font-semibold bg-white/20 backdrop-blur-md text-gray-700 -ml-3"> 3+ </span>
+                    </div>
+                    <div className="flex items-center">
+                      <span className="text-[7px] rounded-sm bg-gray-300 p-1 font-serif">Visual</span>
+                      <span className="text-[7px] rounded-sm bg-gray-300 p-1 font-serif ml-0.5 mr-3">🏆</span>
+                      <p><MessageCircle size={10} color="gray" /></p>
+                      <p className="text-[7px] text-gray-500 mr-2">5</p>
+                      <p><Paperclip size={10} color="gray" /></p>
+                      <p className="text-[7px] text-gray-500">3</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
