@@ -1,4 +1,4 @@
-import { DumbbellIcon,} from "lucide-react";
+import { Bold, DumbbellIcon,} from "lucide-react";
 import frame from "@/public/photos/Frame 217.svg";
 import Image from "next/image";
 import image1 from "@/public/photos/image1.png";
@@ -119,7 +119,7 @@ const ProjectsCard = () => {
               </div>
             </div>
             <div className="grid grid-cols-2">
-              <div className="bg-[rgba(255,255,255,1)] p-2">
+              <div className="bg-[rgba(255,255,255,1)] px-2 pb-2 rounded-2xl">
                 <div className="flex items-center gap-4 pr-2 mt-6">
                   <h1 className="text-gray-400 text-[8.5px] ">08:00 AM</h1>
                   <div className="flex-1 h-[0.5px] bg-gray-300"/>
@@ -140,30 +140,30 @@ const ProjectsCard = () => {
                   <div className="flex-1 h-[0.5px] bg-gray-300"></div>
                 </div>
 
-                <div className="flex ml-36 -mt-8 border-[rgba(167,195,209,1)] border-2 items-center gap-4 w-40 py-2 px-2 rounded-xs bg-[rgba(225,251,254,1)]">
+                <div className="flex ml-36 -mt-6 bg-[rgba(225,251,254,1)] z-40 relative border-2 items-center justify-between gap-4 w-fit py-0.5 px-2 rounded-xs border-[rgba(167,195,209,1)]">
                   <div>
-                    <h1 className="text-[8px]">Fintask</h1>
-                    <h1 className="text-xs font-black">Ux copywrite</h1>
+                    <h1 className="text-[6px]">Fintask</h1>
+                    <h1 className="text-[8px] font-black whitespace-break-spaces">Ux copywrite</h1>
                   </div>
                   <div className="relative flex items-center gap-2 bg-transparent rounded-full py-1 w-fit">
-                    <img src={image1.src} className="w-[17px] h-[17px] rounded-full" />
-                    <img src={image2.src} className="w-3.5 h-3.5 rounded-full border-white border-2 -ml-3" />
+                    <img src={image1.src} className="w-4 h-4 rounded-full" />
+                    <img src={image2.src} className="w-3 h-3 rounded-full border-white border-2 -ml-3" />
                     <span className="text-[6px] flex justify-center items-center h-3.5 w-3.5 rounded-full border-white border font-semibold bg-white/20 backdrop-blur-md text-gray-700 -ml-3">3+</span>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-4 pr-2 mt-12">
-                  <h1 className="text-gray-400 text-xs">12:00 PM</h1>
+                  <h1 className="text-gray-400 text-[8.5px]">12:00 PM</h1>
                   <div className="flex-1 h-[0.5px] bg-gray-300"></div>
                 </div>
 
-                <div className="w-[172px] ml-24 -mt-12 bg-[rgba(253,254,225,1)] rounded-xl py-2 px-2 space-y-1 border border-[rgba(248,255,31,1)]">
-                  <div className="flex items-center gap-12 justify-between">
-                    <p className="font-extralight text-gray-400 text-[8px]">Fintask</p>
-                    <MoreHorizontal />
+                <div className="w-fit ml-24 -mt-12 bg-[rgba(253,254,225,1)] rounded-lg py-2 px-2 space-y-1 border border-[rgba(248,255,31,1)]">
+                  <div className="flex items-center  justify-between">
+                    <p className="font-extralight text-gray-400 text-[7px]">Fintask</p>
+                    <MoreHorizontal size={11} className="font-black"/>
                   </div>
                   <div>
-                    <h1 className="font-black text-xs">Web Visual Design</h1>
+                    <h1 className="font-black text-[9.5px]">Web Visual Design</h1>
                   </div>
                   <div className="flex items-center gap-4 mt-2 justify-between">
                     <div className="relative flex items-center gap-2 bg-transparent rounded-full py-1 w-fit">
@@ -172,12 +172,12 @@ const ProjectsCard = () => {
                       <span className="text-[6px] flex justify-center items-center h-3.5 w-3.5 rounded-full border-white border font-semibold bg-white/20 backdrop-blur-md text-gray-700 -ml-3"> 3+ </span>
                     </div>
                     <div className="flex items-center">
-                      <span className="text-[7px] rounded-sm bg-gray-300 p-1 font-serif">Visual</span>
-                      <span className="text-[7px] rounded-sm bg-gray-300 p-1 font-serif ml-0.5 mr-3">🏆</span>
-                      <p><MessageCircle size={10} color="gray" /></p>
-                      <p className="text-[7px] text-gray-500 mr-2">5</p>
-                      <p><Paperclip size={10} color="gray" /></p>
-                      <p className="text-[7px] text-gray-500">3</p>
+                      <span className="text-[6px] rounded-sm bg-gray-300 p-0.5 font-serif">Visual</span>
+                      <span className="text-[6px] rounded-sm bg-gray-300 p-0.5 font-serif ml-0.5 mr-3">🏆</span>
+                      <MessageCircle size={7} color="gray" />
+                      <p className="text-[6px] text-gray-500 mr-1 ml-0.5">5</p>
+                      <Paperclip size={7} color="gray" />
+                      <p className="text-[6px] ml-0.5 text-gray-500">3</p>
                     </div>
                   </div>
                 </div>
