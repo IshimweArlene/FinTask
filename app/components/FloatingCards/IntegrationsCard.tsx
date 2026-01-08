@@ -33,9 +33,17 @@ const IntegrationCard = () => {
                     <h1 className="text-sm font-black">Dropbox</h1>
                     <h1 className="text-[rgba(151,91,236,1)] text-[9.67px] bg-[rgba(151,91,236,0.04)] p-1.5 rounded-2xl ml-14 border-[0.73px] border-[rgba(151,91,236,0.08)]">Popular</h1>
                   </div>
+                  <div className="h-3 bg-[rgba(246,246,246,1)] rounded-2xl mt-6 mb-4"/>
+                  <div className="h-3 w-2/3 bg-[rgba(246,246,246,1)] rounded-2xl mb-4"/>
+                  <div className="grid grid-cols-12 gap-4">
+                    <button className="bg-[rgba(0,0,0,0.04)] col-span-5 rounded-2xl border-[0.72px] h-10  border-[rgba(255,255,255,0.24)] text-[rgba(0,0,0,0.04)] p-2 text-xs">See more</button>
+                    <button className="bg-[rgba(0,0,0,0.04)] col-span-7 rounded-2xl border-[0.72px] h-10  border-[rgba(255,255,255,0.24)] text-[rgba(0,0,0,0.04)] p-2 text-xs">+ Sign to install</button>
+                  </div>
                 </div>    
               </div>
-              <div className="bg-[rgba(255,255,255,1)] rounded-xl ">2</div>
+              <div className="bg-[rgba(255,255,255,1)] rounded-xl ">
+                
+              </div>
               <div className="bg-[rgba(255,255,255,1)] rounded-xl">3</div>
               <div className="bg-yellow-200">4</div>
             </div>
