@@ -1,0 +1,52 @@
+import { DumbbellIcon, MoreHorizontal, Flag, MessageCircle, Paperclip } from "lucide-react";
+import frame from "@/public/photos/Frame 217.svg";
+import Image from "next/image";
+import dropbox from "@/public/photos/dropbox.svg";
+const IntegrationCard = () => {
+  return (
+    <div className="pl-24 pr-20 relative my-12">
+      <div className="relative grid grid-cols-2 gap-8 bg-[rgba(151,91,236,1)] h-[556px]  pt-6 pl-14 z-30 rounded-4xl">
+        <div className="flex flex-col items-start h-full pb-8">
+          <div className="flex gap-4 space-y-6 items-center justify-center ">
+            <div className="flex flex-col gap-4 items-center mt-6">
+              <div className="border-[rgba(255,255,255,1)] bg-[rgba(255,255,255,0.2)] border-8 w-13 h-13 ml-2 mt-12  rounded-full "/>
+              <div className="bg-white w-0.5 h-44 "></div>
+            </div>
+            <div>
+              <h1 className="text-white text-6xl font-sens">Create calm with,</h1>
+              <h1 className="text-white text-6xl">integrations.</h1>
+              <h1 className="text-white text-2xl font-extralight mt-6">Connect Fintask with all the favorite tools you’ve </h1>
+              <h1 className="text-white text-2xl font-extralight">already use.</h1>
+            </div>
+          </div>
+          <button className="text-center flex items-center gap-4 h-18 ml-8 mt-6 bg-[rgba(252,79,36,1)] py-3 px-8 font-bold text-lg text-white rounded-full border-3 border-[rgba(184,53,20,1)] shadow-[5px_5px_0_0_rgba(184,53,20,1)]"><span className="border-white border-4 inline-flex w-5 h-5  rounded-full"/> Explore integrations</button>
+        </div>
+        <div className="mt-24 mr-20">
+          <div className="bg-[rgba(255,255,255,0.18)] h-full w-full rounded-t-3xl"> 
+            <div className="grid grid-cols-2 grid-rows-2 gap-4 w-full h-full p-8">
+              <div className="bg-[rgba(255,255,255,1)] rounded-xl p-4">
+                <div>
+                  <div className="flex items-center gap-2.5">
+                    <div className="bg-[rgba(0,98,255,0.08)] border-[rgba(0,98,255,0.24)] border-[0.58px] rounded-full p-2">
+                     <Image src={dropbox} alt="Dropbox Logo" className="w-4.5 h-4.5"/>
+                    </div>
+                    <h1 className="text-sm font-black">Dropbox</h1>
+                    <h1 className="text-[rgba(151,91,236,1)] text-[9.67px] bg-[rgba(151,91,236,0.04)] p-1.5 rounded-2xl ml-14 border-[0.73px] border-[rgba(151,91,236,0.08)]">Popular</h1>
+                  </div>
+                </div>    
+              </div>
+              <div className="bg-[rgba(255,255,255,1)] rounded-xl ">2</div>
+              <div className="bg-[rgba(255,255,255,1)] rounded-xl">3</div>
+              <div className="bg-yellow-200">4</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+        
+      <div className="absolute bg-[rgba(0,0,0,0.05)] scale-x-65 rounded-4xl z-0 rotate-4 right-6 translate-x-44 translate-y-8 inset-0"/>
+    </div>
+  );
+}
+ 
+export default IntegrationCard;
