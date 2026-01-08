@@ -38,8 +38,8 @@ const IntegrationCard = () => {
                  <p className="text-[rgba(112,112,112,1)] text-sm my-5 ml-3">Get instant tools alerts about new survey integrations.</p>
                   
                   <div className="grid grid-cols-12 gap-4">
-                    <button className="bg-[rgba(0,0,0,0.04)] col-span-5 rounded-2xl border-[0.72px] h-10  border-[rgba(255,255,255,0.24)] text-[rgba(0,0,0,0.04)] p-2 text-xs">See more</button>
-                    <button className="bg-[rgba(0,0,0,0.04)] col-span-7 rounded-2xl border-[0.72px] h-10  border-[rgba(255,255,255,0.24)] text-[rgba(0,0,0,0.04)] p-2 text-xs">+ Sign to install</button>
+                    <button className="bg-[rgba(0,0,0,0.04)] col-span-5 rounded-2xl border-[0.72px] h-10  border-[rgba(255,255,255,0.24)] text-[rgba(0,0,0,0.48)] p-2 text-xs">See more</button>
+                    <button className="bg-black col-span-7 rounded-3xl border-[0.72px] h-10  border-white/25 shadow-[rgba(255,255,255,0.32)] text-white p-2 text-xs">+ Sign to install</button>
                   </div>
                 </div>    
               </div>
