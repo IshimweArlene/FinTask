@@ -3,6 +3,10 @@ import frame from "@/public/photos/Frame 217.svg";
 import Image from "next/image";
 import image1 from "@/public/photos/image1.png";
 import image2 from "@/public/photos/image2.png";
+import image3 from "@/public/photos/img1.png";
+import image4 from "@/public/photos/img2.png";
+import image5 from "@/public/photos/img3.png";
+import image6 from "@/public/photos/img4.png";
 import Notion from "@/public/photos/notion.svg";
 import Trello from "@/public/photos/trello.svg";
 import rect1 from "@/public/photos/rect1.svg";
@@ -79,13 +83,8 @@ const ProjectsCard = () => {
                 <div className="bg-[rgba(255,255,255,1)] rounded-2xl p-2 min-w-0 flex items-center overflow-visible">
                   <div className="bg-white px-2 py-8 rounded-2xl w-full max-w-full min-w-0">
                     <div className="relative w-full h-20 flex items-center">
-                      <div className="absolute -top-6 left-24 z-60 bg-gray-200 text-gray-700 text-[7px] px-2 py-1 rounded whitespace-normal">
-                        <p className="font-bold text-[9px]">Progress</p>
-                        Complete almost <span className="font-semibold">90%</span>
-                        <div className="absolute bottom-0 left-12 transform translate-y-full">
-                          <div className="w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-200"></div>
-                        </div>
-                      </div>
+                      
+                      
                       <div className="relative w-32 h-20">
                         <Image src={rect1} alt="rect1" className="absolute inset-0 rounded-xl z-50 h-18 w-auto object-cover" />
                         <Image src={rect2} alt="rect2" className="absolute inset-0 translate-x-8 rounded-xl z-40 h-18 w-auto object-cover" />
@@ -182,11 +181,11 @@ const ProjectsCard = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-[rgba(255,255,255,1)] rounded-2xl mt-2 p-6">
+              <div className="bg-[rgba(255,255,255,1)] rounded-2xl mt-2 px-6 pt-4">
                 <div className="relative">
-                  <div className="relative flex items-end justify-between mb-10" style={{ height: '200px' }}>
+                  <div className="relative flex items-end  mb-2 mt-4" style={{ height: '120px' }}>
                     {/* Y-axis labels */}
-                    <div className="flex flex-col justify-between h-full -ml-2" style={{ height: '200px' }}>
+                    <div className="flex flex-col justify-between h-full -ml-2" style={{ height: '120px' }}>
                       <span className="text-[8px] text-gray-400">100</span>
                       <span className="text-[8px] text-gray-400">80</span>
                       <span className="text-[8px] text-gray-400">50</span>
@@ -194,55 +193,49 @@ const ProjectsCard = () => {
                     </div>
 
                     {/* Bars container */}
-                    <div className="flex-1 flex items-end justify-around gap-4 h-full ml-4" style={{ height: '200px' }}>
-                      <div className="relative h-36 w-2.5 bg-[rgba(255,209,90,0.12)] ml-4 rounded-lg overflow-hidden">
-                        <div className="absolute bottom-0 w-full bg-[rgba(255,209,90,1)] transition-all rounded-lg" style={{ height: "60%" }}/>
+                    <div className="flex-1 flex items-end justify-around gap-4 h-full ml-4" style={{ height: '120px' }}>
+                      {/* First Bar - Orange */}
+                      <div className="relative h-full bg-[rgba(252,79,36,0.1)] rounded-lg overflow-hidden" style={{ width: '38px', height: '120px' }}>
+                        <div className="absolute bottom-0 w-full bg-[rgba(252,79,36,1)] transition-all rounded-lg" style={{ height: "25%" }}/>
                       </div>
-
-                      <div className="flex flex-col items-center relative h-full">
-                        <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 z-50">
-                          <p className="text-[7px] font-semibold text-gray-700 mb-1 text-center">David</p>
-                          <div className="bg-green-100 text-gray-700 text-[8px] px-2 py-1 rounded whitespace-nowrap relative">
-                            Progress with <span className="font-bold">90%</span>
-                            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full">
-                              <div className="w-0 h-0 border-l-2 border-r-2 border-t-2 border-transparent border-t-green-100"></div>
-                            </div>
+                      <div className="relative w-[42px] h-[120px]">
+                        <div className="absolute -top-7 left-1/2 -translate-x-1/2 z-50 bg-white/60 backdrop-blur-md  text-[6.5px] px-1 py-1 rounded-md w-18 text-start leading-tight shadow-sm">
+                          <p className="font-black text-gray-600 text-[8px]">David</p>
+                          <span className="font-light leading-tight text-gray-600 whitespace-break-spaces">progress with 90%</span>
+                          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full">
+                            <div className="w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-white/80" />
                           </div>
                         </div>
-                        <div className="relative w-12 h-full flex items-end">
-                          <div className="w-full bg-[rgba(20,80,26,1)] rounded-t-lg" style={{ height: '180px' }}></div>
+                        <div className="relative w-[38px] h-full bg-[rgba(20,80,26,0.1)] rounded-lg overflow-hidden mx-auto">
+                          <div
+                            className="absolute bottom-0 w-full bg-[rgba(20,80,26,1)] rounded-lg transition-all"
+                            style={{ height: "92%" }}
+                          />
                         </div>
                       </div>
-
-                      <div className="relative h-36 w-2.5 bg-[rgba(255,209,90,0.12)] ml-4 rounded-lg overflow-hidden">
-                        <div className="absolute bottom-0 w-full bg-[rgba(255,209,90,1)] transition-all rounded-lg" style={{ height: "60%" }}/>
+                      {/* Third Bar - Light Purple */}
+                      <div className="relative h-full bg-[rgba(243,176,255,0.1)] rounded-lg overflow-hidden" style={{ width: '38px', height: '120px' }}>
+                        <div className="absolute bottom-0 w-full bg-[rgba(243,176,255,1)] transition-all rounded-lg" style={{ height: "75%" }}/>
                       </div>
-
-                      <div className="flex flex-col items-center h-full">
-                        <div className="relative w-12 h-full flex items-end">
-                          <div className="w-full relative h-full flex flex-col justify-end">
-                            <div className="bg-[rgba(255,209,90,1)] rounded-t-lg" style={{ height: '180px' }}></div>
-                            {/* Cream top section */}
-                            <div className="bg-[rgba(255,240,200,0.6)] rounded-t-lg" style={{ height: '10px' }}></div>
-                          </div>
-                        </div>
+                      {/* Fourth Bar - Yellow */}
+                      <div className="relative h-full bg-[rgba(255,209,90,0.1)] rounded-lg overflow-hidden" style={{ width: '38px', height: '120px' }}>
+                        <div className="absolute bottom-0 w-full bg-[rgba(255,209,90,1)] transition-all rounded-lg" style={{ height: "50%" }}/>
                       </div>
                     </div>
                   </div>
 
-                  {/* Avatars aligned on same line */}
                   <div className="flex justify-around gap-4 ml-4">
                     <div className="flex items-center justify-center" style={{ width: '48px' }}>
-                      <img src={image1.src} className="w-8 h-8 rounded-full border-2 border-orange-400" />
+                      <img src={image3.src} className="w-8 h-8 rounded-full border-3 border-[rgba(252,79,36,1)]" />
                     </div>
                     <div className="flex items-center justify-center" style={{ width: '48px' }}>
-                      <img src={image2.src} className="w-8 h-8 rounded-full border-2 border-green-600" />
+                      <img src={image4.src} className="w-8 h-8 rounded-full border-3 border-[rgba(20,80,26,1)]" />
                     </div>
                     <div className="flex items-center justify-center" style={{ width: '48px' }}>
-                      <img src={image1.src} className="w-8 h-8 rounded-full border-2 border-purple-400" />
+                      <img src={image5.src} className="w-8 h-8 rounded-full border-3 border-[rgba(243,176,255,1)]" />
                     </div>
                     <div className="flex items-center justify-center" style={{ width: '48px' }}>
-                      <img src={image2.src} className="w-8 h-8 rounded-full border-2 border-yellow-400" />
+                      <img src={image6.src} className="w-8 h-8 rounded-full border-3 border-[rgba(255,209,90,1)]" />
                     </div>
                   </div>
                 </div>
