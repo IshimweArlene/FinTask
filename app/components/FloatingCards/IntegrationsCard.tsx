@@ -1,9 +1,10 @@
-import { DumbbellIcon, MoreHorizontal, Flag, MessageCircle, Paperclip } from "lucide-react";
+import { DumbbellIcon, MoreHorizontal, Flag, MessageCircle, Paperclip, Circle } from "lucide-react";
 import Slack from "@/public/photos/slack.svg";
 import Image from "next/image";
 import dropbox from "@/public/photos/dropbox.svg";
 import Notion from "@/public/photos/notion2.svg";
 import Team from "@/public/photos/team.svg";
+import circle from "@/public/photos/circle.svg";
 const IntegrationCard = () => {
   return (
     <div className="pl-24 pr-20 relative my-12">
@@ -25,24 +26,8 @@ const IntegrationCard = () => {
         </div>
         <div className="mt-24 mr-20">
           <div className="bg-[rgba(255,255,255,0.18)] h-full w-full rounded-t-3xl"> 
-            <div className="grid grid-cols-2 grid-rows-2 gap-4 w-full h-full p-8">
-              <div className="bg-[rgba(255,255,255,1)] rounded-xl p-4">
-                <div>
-                  <div className="flex items-center gap-2.5">
-                    <div className="bg-[rgba(236,178,46,0.1)]  rounded-full p-2">
-                     <Image src={Slack} alt="Slack Logo" className="w-4.5 h-4.5"/>
-                    </div>
-                    <h1 className="text-sm font-black">Slack</h1>
-                    <h1 className="text-[rgba(1,122,255,1)] text-[9.67px] bg-[rgba(245,250,255,1)] p-1.5 rounded-2xl ml-24 border-[0.73px] border-[rgba(1,122,255,0.08)]">New</h1>
-                  </div>
-                 <p className="text-[rgba(112,112,112,1)] text-sm my-5 ml-3">Get instant tools alerts about new survey integrations.</p>
-                  
-                  <div className="grid grid-cols-12 gap-4">
-                    <button className="bg-[rgba(0,0,0,0.04)] col-span-5 rounded-2xl border-[0.72px] h-10  border-[rgba(255,255,255,0.24)] text-[rgba(0,0,0,0.48)] p-2 text-xs">See more</button>
-                    <button className="bg-black col-span-7 rounded-3xl border-[0.72px] h-10  border-white/25 shadow-[rgba(255,255,255,0.32)] text-white p-2 text-xs">+ Sign to install</button>
-                  </div>
-                </div>    
-              </div>
+            <div className="grid grid-cols-2 relative z-30 grid-rows-2 gap-4 w-full h-full p-8">
+              <div></div>
               <div className="bg-[rgba(255,255,255,1)] rounded-xl p-4">
                 <div>
                   <div className="flex items-center gap-2.5">
@@ -94,6 +79,30 @@ const IntegrationCard = () => {
                   </div>
                 </div>    
               </div>
+            </div>
+            <div className="absolute w-[283px] h-[213.9px] z-630 top-28 right-[380px] bg-[rgba(255,255,255,1)] rounded-xl p-4">
+              <div>
+                <div className="flex items-center gap-2.5 justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="bg-[rgba(236,178,46,0.1)]  rounded-full p-2">
+                      <Image src={Slack} alt="Slack Logo" className="w-6 h-6"/>
+                    </div>
+                    <h1 className="text-lg font-black">Slack</h1>
+                  </div>                  
+                  <div>
+                  <h1 className="text-[rgba(1,122,255,1)] text-[13.23px] bg-[rgba(245,250,255,1)] p-1.5 h-[26.46px] rounded-4xl ml-24 border-[0.73px] border-[rgba(1,122,255,0.08)]">New</h1>
+                  </div>
+                </div>
+                <p className="text-[rgba(112,112,112,1)] text-[15.44px] my-5 ml-3">Get instant tools alerts about new survey integrations.</p>
+                
+                <div className="grid grid-cols-12 gap-4">
+                  <button className="bg-[rgba(0,0,0,0.04)] col-span-5 rounded-2xl border-[0.72px] h-10  border-[rgba(255,255,255,0.24)] text-[rgba(0,0,0,0.48)] p-2 text-sm">See more</button>
+                  <button className="bg-black flex items-center justify-center col-span-7 rounded-3xl border-[0.72px] h-10  border-white/25 shadow-[rgba(255,255,255,0.32)] text-white p-2 text-sm"><span className="text-2xl mr-2">+ </span> Sign to install</button>
+                </div>
+              </div>    
+            </div>
+            <div className=" absolute rounded-full z-50 top-44 right-48 ">
+              <Image src={circle} alt="Circle" className="w-[350px] h-[350px]" />
             </div>
           </div>
         </div>

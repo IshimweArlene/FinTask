@@ -1,3 +1,5 @@
+'use client';
+import { useState } from "react";
 import OverlappedImages from "./components/overlappedImages";
 import image1 from "@/public/photos/image1.png";
 import image2 from "@/public/photos/image2.png";
@@ -18,6 +20,7 @@ import ProjectsCard from "./components/FloatingCards/ProjectsCard";
 import IntegrationCard from "./components/FloatingCards/IntegrationsCard";
 
 const Landing = () => {
+  const [active, setActive] = useState<"Monthly" | "Yearly">("Yearly")
   return (
     <div className="min-h-screen flex flex-col items-center">
       <div className="flex justify-center items-center mt-24">
@@ -121,6 +124,26 @@ const Landing = () => {
           <ProjectsCard />
           <IntegrationCard />
         </div>
+      </div>
+      <div className="items-center flex-col flex mt-32">
+        <div className="flex mb-4 items-center gap-3">
+          <div className="border-[rgba(252,79,36,1)] bg-[rgba(252,79,36,0.08)] border-4 w-5 h-5 rounded-full "></div>
+          <h1 className="caveat font-light strike text-gray-400 text-4xl ">Pricing</h1>
+        </div>
+        <div className="flex flex-col items-center">
+          <h1 className="text-6xl text-gray-900 font-bold">Choose a plan that fits</h1>
+          <h1 className="text-6xl text-gray-900 font-bold mt-3"> your team</h1>
+          <p className="text-[20px] my-7 text-gray-700 font-medium">Choose your billing.</p>
+        </div>
+        <div className="bg-[rgba(151,91,236,1)] mb-16 flex items-center gap-6 py-4 px-9 font-bold text-white text-lg rounded-full border-4 border-[rgba(115,69,179,1)] shadow-[5px_5px_0_0_rgba(115,69,179,1)]">
+          <button onClick={() => setActive("Monthly")} className={active === "Monthly" ? "text-black font-semibold bg-white px-2 rounded-md" : "text-gray-400" }>
+                  Day
+                </button>
+                <button onClick={() => setActive("Yearly")} className={ active === "Yearly" ? "text-black font-semibold bg-white px-2 rounded-md" : "text-gray-400"}>
+                  Week
+                </button>
+        </div>
+        
       </div>
     </div>
   );
