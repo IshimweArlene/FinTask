@@ -15,22 +15,22 @@ const PricingComp = () => {
           <h1 className='text-[56px] font-bold mt-6'>$9.99</h1>
           <h1 className='text-[20px] font-normal'>Per month</h1>
         </div>
-        <div className='flex flex-col  justify-center items-start gap-4 mt-6'>
+        <div className='flex flex-col  justify-center items-start gap-8 mt-6'>
           <div className='flex justify-center gap-4 items-center'>
-            <Check color='rgba(151,91,236,1)' size={30} className='border-2px border-[rgb(151,91,236)] bg-[rgba(151,91,236,0.08)] rounded-full p-1' />
+            <Check color='rgba(151,91,236,1)' size={30} className='shrink-0 border-2px border-[rgb(151,91,236)] bg-[rgba(151,91,236,0.08)] rounded-full p-1' />
             <p className='text-[18px] font-normal'>Unlimited projects, clients</p>
           </div>
           <div className='flex justify-center gap-4 items-center'>
-            <Check color='rgba(151,91,236,1)' size={30} className='border-2px border-[rgb(151,91,236)] bg-[rgba(151,91,236,0.08)] rounded-full p-1' />
+            <Check color='rgba(151,91,236,1)' size={30} className='shrink-0 border-2px border-[rgb(151,91,236)] bg-[rgba(151,91,236,0.08)] rounded-full p-1' />
             <p className='text-[18px] font-normal'>Personal desktop activity tracking</p>
           </div>
           <div className='flex justify-center gap-4 items-center'>
-            <Check color='rgba(151,91,236,1)' size={30} className='border-2px border-[rgb(151,91,236)] bg-[rgba(151,91,236,0.08)] rounded-full p-1' />
+            <Check color='rgba(151,91,236,1)' size={30} className='shrink-0 border-2px border-[rgb(151,91,236)] bg-[rgba(151,91,236,0.08)] rounded-full p-1' />
             <p className='text-[18px] font-normal'>You can add 05 members on your project</p>
           </div>
         </div>
         <button className="bg-white mt-16 flex items-center gap-6 py-4 px-9 font-bold text-[rgba(151,91,236,1)] text-lg rounded-full border-4 border-[rgba(115,69,179,1)] shadow-[5px_5px_0_0_rgba(115,69,179,1)]">
-          <div className="border-4 w-5 h-5 border-[rgba(151,91,236,1)] rounded-full"></div>
+          <div className="border-4 w-5 h-5 border-[rgba(151,91,236,1)] rounded-full"/>
           Get Buy
         </button>
       </div>
@@ -42,21 +42,21 @@ const PricingComp = () => {
         <div>
           <h1 className='text-[56px] font-bold mt-6'>$12.99</h1>
           <h1 className='text-[20px] font-normal'>Per month</h1>
-          <div className=' bg-[rgba(252,79,36,1)] w-fit px-4 p-2 flex items-center justify-center rounded-4xl'>
+          <div className=' bg-[rgba(252,79,36,1)] my-5 w-fit px-4 p-2 flex items-center justify-center rounded-4xl'>
             <p className='text-white font-medium text-[14px]'>15 days free trials !</p>
           </div>
         </div>
-        <div className='flex flex-col  justify-center items-start gap-4 mt-6'>
-          <div className='flex justify-center gap-4 items-center'>
-            <Check color='rgba(151,91,236,1)' size={30} className='border-2px border-[rgb(151,91,236)] bg-[rgba(151,91,236,0.08)] rounded-full p-1' />
+        <div className='flex flex-col  justify-center items-start gap-8 mt-6'>
+          <div className='flex justify-center gap-4 items-start'>
+            <Check color='white' size={30} className='shrink-0 border-2px border-[rgb(151,91,236)] bg-[rgba(151,91,236,1)] rounded-full p-1' />
             <p className='text-[18px] font-normal'>Everything in Starter +</p>
           </div>
-          <div className='flex justify-center gap-4 items-center'>
-            <Check color='rgba(151,91,236,1)' size={30} className='border-2px border-[rgb(151,91,236)] bg-[rgba(151,91,236,0.08)] rounded-full p-1' />
+          <div className='flex justify-center gap-4 items-start'>
+            <Check color='white' size={30} className='shrink-0 border-2px border-[rgb(151,91,236)] bg-[rgba(151,91,236,1)] rounded-full p-1' />
             <p className='text-[18px] font-normal'>Centralized control of labor costs and billable rates for team members</p>
           </div>
-          <div className='flex justify-center gap-4 items-center'>
-            <Check color='rgba(151,91,236,1)' size={30} className='border-2px border-[rgb(151,91,236)] bg-[rgba(151,91,236,0.08)] rounded-full p-1' />
+          <div className='flex justify-center gap-4 items-start'>
+            <Check color='white' size={30} className='shrink-0 border-2px border-[rgb(151,91,236)] bg-[rgba(151,91,236,1)] rounded-full p-1' />
             <p className='text-[18px] font-normal'>Single sign-on (SSO)</p>
           </div>
         </div>
@@ -65,7 +65,7 @@ const PricingComp = () => {
           Get Buy
         </button>
       </div>
-      <div className='h-[634.03px] border-[rgba(0,0,0,0.04)] px-6 py-4 rounded-2xl'>
+      <div className='h-[634.03px] border-[rgba(0,0,0,0.04)] border px-6 py-4 rounded-2xl'>
         <div>
           <Image src={briefcase} alt="users" />
           <h1 className="text-[24px] font-medium mt-6"> Startup</h1>
@@ -74,22 +74,22 @@ const PricingComp = () => {
           <h1 className='text-[40px] font-bold mt-6'>Contact </h1>
           <h1 className='text-[20px] font-normal'>us to pre order</h1>
         </div>
-        <button className="bg-[rgba(151,91,236,1)] mt-16 flex items-center gap-6 py-4 px-9 font-bold text-white text-lg rounded-full border-4 border-[rgba(115,69,179,1)] shadow-[5px_5px_0_0_rgba(115,69,179,1)]">
+        <button className="bg-[rgba(151,91,236,1)] mt-8 mb-6 flex items-center gap-6 py-4 px-9 font-bold text-white text-lg rounded-full border-4 border-[rgba(115,69,179,1)] shadow-[5px_5px_0_0_rgba(115,69,179,1)]">
           <div className="border-4 w-5 h-5 border-white rounded-full"></div>
            Contact Now
         </button>
-        <div className='flex flex-col  justify-center items-start gap-4 mt-6'>
+        <div className='flex flex-col  justify-center items-start gap-8 mt-8'>
           <div className='flex justify-center gap-4 items-center'>
-            <Check color='rgba(151,91,236,1)' size={30} className='border-2px border-[rgb(151,91,236)] bg-[rgba(151,91,236,0.08)] rounded-full p-1' />
-            <p className='text-[18px] font-normal'>Unlimited projects, clients</p>
+            <Check color='rgba(151,91,236,1)' size={30} className='border-2px shrink-0 border-[rgb(151,91,236)] bg-[rgba(151,91,236,0.08)] rounded-full p-1' />
+            <p className='text-[18px] font-normal'>Everything in Premium +</p>
           </div>
           <div className='flex justify-center gap-4 items-center'>
-            <Check color='rgba(151,91,236,1)' size={30} className='border-2px border-[rgb(151,91,236)] bg-[rgba(151,91,236,0.08)] rounded-full p-1' />
-            <p className='text-[18px] font-normal'>Personal desktop activity tracking</p>
+            <Check color='rgba(151,91,236,1)' size={30} className='border-2px shrink-0 border-[rgb(151,91,236)] bg-[rgba(151,91,236,0.08)] rounded-full p-1' />
+            <p className='text-[18px] font-normal'>Manage multiple workspaces under one Organization</p>
           </div>
           <div className='flex justify-center gap-4 items-center'>
-            <Check color='rgba(151,91,236,1)' size={30} className='border-2px border-[rgb(151,91,236)] bg-[rgba(151,91,236,0.08)] rounded-full p-1' />
-            <p className='text-[18px] font-normal'>You can add 05 members on your project</p>
+            <Check color='rgba(151,91,236,1)' size={30} className='border-2px shrink-0 border-[rgb(151,91,236)] bg-[rgba(151,91,236,0.08)] rounded-full p-1' />
+            <p className='text-[18px] font-normal'>Expert training and assistance</p>
           </div>
         </div>
         
