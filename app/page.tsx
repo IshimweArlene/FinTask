@@ -18,6 +18,7 @@ import Cards from "./components/FloatingCards/Cards";
 import AdvantagesCard from "./components/FloatingCards/AdvantagesCard";
 import ProjectsCard from "./components/FloatingCards/ProjectsCard";
 import IntegrationCard from "./components/FloatingCards/IntegrationsCard";
+import PricingComp from "./components/FloatingCards/PricingComp";
 
 const Landing = () => {
   const [active, setActive] = useState<"Monthly" | "Yearly">("Yearly")
@@ -135,13 +136,16 @@ const Landing = () => {
           <h1 className="text-6xl text-gray-900 font-bold mt-3"> your team</h1>
           <p className="text-[20px] my-7 text-gray-700 font-medium">Choose your billing.</p>
         </div>
-        <div className="bg-[rgba(151,91,236,1)] mb-16 flex items-center gap-6 py-4 px-9 font-bold text-white text-lg rounded-full border-4 border-[rgba(115,69,179,1)] shadow-[5px_5px_0_0_rgba(115,69,179,1)]">
-          <button onClick={() => setActive("Monthly")} className={active === "Monthly" ? "text-black font-semibold bg-white px-2 rounded-md" : "text-gray-400" }>
-                  Day
-                </button>
-                <button onClick={() => setActive("Yearly")} className={ active === "Yearly" ? "text-black font-semibold bg-white px-2 rounded-md" : "text-gray-400"}>
-                  Week
-                </button>
+        <div className="bg-white mb-16 flex items-center gap-12 w-[237px] h-[72px] justify-around font-bold text-white text-lg rounded-full border-3 border-[rgba(115,69,179,1)] shadow-[5px_5px_0_0_rgba(115,69,179,1)]">
+          <button onClick={() => setActive("Monthly")} className={active === "Monthly" ? "text-white rounded-3xl p-4 font-semibold bg-[rgba(151,91,236,1)] px-6 py-2" : "text-gray-400 hover:cursor-pointer" }>
+            Month
+          </button>
+          <button onClick={() => setActive("Yearly")} className={ active === "Yearly" ? "text-white rounded-3xl p-4 font-semibold bg-[rgba(151,91,236,1)] px-6 py-2" : "text-gray-400 hover:cursor-pointer"}>
+            Yearly
+          </button>
+        </div>
+        <div>
+          <PricingComp />
         </div>
         
       </div>
