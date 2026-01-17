@@ -134,16 +134,8 @@ const Landing = () => {
         <div className="flex flex-col items-center">
           <h1 className="text-6xl text-gray-900 font-bold">Choose a plan that fits</h1>
           <h1 className="text-6xl text-gray-900 font-bold mt-3"> your team</h1>
-          <p className="text-[20px] my-7 text-gray-700 font-medium">Choose your billing.</p>
         </div>
-        <div className="bg-white mb-16 flex items-center gap-12 w-[237px] h-[72px] justify-around font-bold text-white text-lg rounded-full border-3 border-[rgba(115,69,179,1)] shadow-[5px_5px_0_0_rgba(115,69,179,1)]">
-          <button onClick={() => setActive("Monthly")} className={active === "Monthly" ? "text-white rounded-3xl p-4 font-semibold bg-[rgba(151,91,236,1)] px-6 py-2" : "text-gray-400 hover:cursor-pointer" }>
-            Month
-          </button>
-          <button onClick={() => setActive("Yearly")} className={ active === "Yearly" ? "text-white rounded-3xl p-4 font-semibold bg-[rgba(151,91,236,1)] px-6 py-2" : "text-gray-400 hover:cursor-pointer"}>
-            Yearly
-          </button>
-        </div>
+        
         <div>
           <PricingComp />
         </div>
