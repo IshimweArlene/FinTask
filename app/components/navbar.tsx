@@ -9,7 +9,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full flex items-center justify-between mt-16 px-40 py-2">
+    <nav className="rounded-3xl mx-auto mb-12 shadow-[0_8px_100px_0_rgba(0,0,0,0.03)] bg-white w-[1170px] h-[86px] flex items-center justify-between mt-16 px-40 py-2">
         <div className='flex gap-24'>
            <div className='flex gap-3 text-3xl'>
             <img src={logo.src} alt="Logo" className="h-10 w-auto" />
