@@ -5,7 +5,7 @@ import { Check } from 'lucide-react';
 import Image from 'next/image';
 const PricingComp = () => {
   return (
-    <div className="w-[1067px] h-[688px] grid grid-cols-3 justify-between gap-12 items-start">
+    <div className="w-[1067px] h-[688px] grid grid-cols-3 justify-between mx-auto gap-12 items-start">
       <div className='h-[634.03px] border border-[rgba(0,0,0,0.04)] px-6 py-4 rounded-2xl'>
         <div>
           <Image src={users} alt="users" />
