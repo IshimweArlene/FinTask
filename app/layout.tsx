@@ -3,6 +3,7 @@ import Navbar from "./components/navbar";
 import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "./components/Footer";
+import FooterHero from "./components/FooterHero"; 
 const publicSans = localFont({
   src: "../public/fonts/public-sans/PublicSans-Regular.ttf",
   variable: "--font-public",
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={`${publicSans.className} ${caveat.variable}`}>
         <Navbar />
         {children}
+        <FooterHero />
         <Footer />
       </body>
     </html>
