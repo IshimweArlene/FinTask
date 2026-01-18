@@ -11,7 +11,7 @@ const PricingComp = () => {
   return (
     <div className='mx-auto flex flex-col items-center justify-center w-[1067px] h-[906.35px]'>
       <div>
-        <p className="text-[20px] my-7 text-gray-700 font-medium">Choose your billing.</p>
+        <p className="text-[20px] mb-7 mt-3 text-gray-700 font-medium">Choose your billing.</p>
         <div className="bg-white mb-16 flex items-center gap-12 w-[237px] h-[72px] justify-around font-bold text-white text-lg rounded-full border-3 border-[rgba(115,69,179,1)] shadow-[5px_5px_0_0_rgba(115,69,179,1)]">
           <button onClick={() => setActive("Monthly")} className={active === "Monthly" ? "text-white rounded-3xl p-4 font-semibold bg-[rgba(151,91,236,1)] px-6 py-2" : "text-gray-400 hover:cursor-pointer" }>
             Month
