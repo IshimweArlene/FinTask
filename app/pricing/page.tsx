@@ -25,13 +25,13 @@ const Pricing = () => {
       </div>
       <PricingComp />
       <div className="bg-[rgba(249,249,229,1)] w-full mt-12 h-[1922px] grid grid-rows-3 justify-center p-24 items-start">
-        <div className="flex bg-white gap-6 p-12 w-7xl h-[520px]">
-          <div className=" flex flex-1 mr-12 flex-col items-start border-2 border-white ">
+        <div className="flex bg-white gap-4 p-12 w-7xl h-[520px]">
+          <div className=" flex flex-1 mr-12 flex-col items-start  mt-6">
             <div className="flex gap-2 justify-center items-center">
               <Image src={users} alt="users" className="h-14 w-14" />
               <h1 className="text-[24px] font-medium "> Individuals</h1>
             </div>
-            <div className="flex flex-col flex-1 w-full justify-between ">
+            <div className="flex flex-col flex-1 w-full justify-between border-r-2 border-black/8 pr-10">
               <p className="font-normal text-lg  mt-12">Automate routine tasks so you can focus on building relationships, closing deals, and hitting gongs.</p>
               <button className="bg-white w-[156px] h-[53px] flex items-center gap-6 justify-center text-center font-bold text-black text-lg rounded-full border-4 border-black shadow-[5px_5px_0_0_rgba(0,0,0,1)]">
                 Read More 
@@ -40,7 +40,7 @@ const Pricing = () => {
           </div>
           <div className="flex-1">
             <p className="font-medium text-3xl mb-8 mt-8">It's help you:</p>
-            <div className="flex flex-col items-start gap-8">
+            <div className="flex flex-col items-start gap-9">
               <div className='flex justify-center gap-4 items-center'>
                 <Plus color='rgba(151,91,236,1)' size={22} className='shrink-0 border-2px border-[rgb(151,91,236)] bg-[rgba(151,91,236,0.08)] rounded-full p-1' />
                 <p className='text-lg font-normal'>Collaborators per project</p>
@@ -63,9 +63,9 @@ const Pricing = () => {
               </div>
             </div>            
           </div>
-          <div className="flex-1">
+          <div className="flex-1 ">
             <p className="font-medium text-3xl my-8">What include:</p>
-            <div className="flex flex-col items-start gap-4">
+            <div className="flex flex-col items-start gap-9">
               <div className='flex justify-center gap-4 items-center'>
                 <Check color='rgba(151,91,236,1)' size={22} className='shrink-0 border-2px border-[rgb(151,91,236)] bg-[rgba(151,91,236,0.08)] rounded-full p-1' />
                 <p className='text-lg font-normal'>Completed tasks archive</p>
