@@ -6,6 +6,7 @@ import target from "@/public/photos/1.svg"
 import briefcase from "@/public/photos/2.svg"
 import Image from "next/image";
 import { Check, Plus } from "lucide-react";
+import FAQ from "../components/Faq";
 const Pricing = () => {
   return (
     <div>
@@ -198,6 +199,7 @@ const Pricing = () => {
         </div>
         
       </div>
+      <FAQ />
      </div>
   );
 }
