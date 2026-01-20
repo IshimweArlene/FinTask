@@ -198,12 +198,12 @@ const Pricing = () => {
           </div>
         </div>        
       </div>
-      <div className="flex flex-col ">
+      <div className="flex flex-col items-center justify-center min-h-screen text-center ">
         <div className="flex mb-4 items-center gap-3">
           <div className="border-[rgba(252,79,36,1)] bg-[rgba(252,79,36,0.08)] border-4 w-5 h-5 rounded-full "></div>
           <h1 className="caveat font-light strike text-[rgba(188,188,188,1)] text-4xl ">FAQ</h1>
         </div>
-        <h1 className="text-5xl text-black font-bold">Frequently asked questions</h1>
+        <h1 className="text-5xl text-black font-bold mb-4">Frequently asked questions</h1>
         <FAQ />
       </div>
       
