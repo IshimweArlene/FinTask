@@ -205,7 +205,7 @@ const Pricing = () => {
         </div>
         <h1 className="text-5xl text-black font-bold mb-6">Frequently asked questions</h1>
         <p className="text-[20px]  text-black font-medium mb-4">Have a questions? wer’e to help you</p>
-        <div className="w-[237px] h-[53px] mb-16 mt-2 border border-black/10 ">
+        <div className="w-[237px] h-[53px] mb-16 mt-2 border border-black/10 rounded-xl ">
           <input type="text" placeholder="Search" className="w-full h-full px-4 outline-none text-gray-600 text-lg"/>
         </div>
         <FAQ />
