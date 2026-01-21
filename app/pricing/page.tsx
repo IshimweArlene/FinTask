@@ -5,7 +5,7 @@ import users from '@/public/photos/users.svg';
 import target from "@/public/photos/1.svg"
 import briefcase from "@/public/photos/2.svg"
 import Image from "next/image";
-import { Check, Plus } from "lucide-react";
+import { Check, Plus, SearchIcon } from "lucide-react";
 import FAQ from "../components/Faq";
 const Pricing = () => {
   return (
@@ -205,9 +205,11 @@ const Pricing = () => {
         </div>
         <h1 className="text-5xl text-black font-bold mb-6">Frequently asked questions</h1>
         <p className="text-[20px]  text-black font-medium mb-4">Have a questions? wer’e to help you</p>
-        <div className="w-[237px] h-[53px] mb-16 mt-2 border border-black/10 rounded-xl ">
-          <input type="text" placeholder="Search" className="w-full h-full px-4 outline-none text-gray-600 text-lg"/>
+        <div className="relative w-[237px] h-[53px] mb-16 mt-2 border border-black/10 rounded-2xl">
+          <input type="text" placeholder="Search" className="w-full h-full pl-12 pr-4 outline-none text-black/56 text-[16px] rounded-xl"/>
+          <SearchIcon className="absolute left-4 top-1/2 -translate-y-1/2 text-black/56 text-[16px]" />
         </div>
+
         <FAQ />
       </div>
       

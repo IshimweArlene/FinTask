@@ -46,7 +46,7 @@ export default function FAQ() {
             key={index}
             className={`border-2 rounded-2xl transition-all duration-300 ${
               isOpen
-                ? "border-[rgb(151,91,236)] bg-[rgba(151,91,236,0.05)]"
+                ? "border-[rgb(151,91,236)] border-4 shadow-[8px_8px_0px_0px_rgba(115,69,179,1)] bg-[rgba(151,91,236,0.05)]"
                 : "border-gray-200"
             }`}
           >
@@ -57,7 +57,7 @@ export default function FAQ() {
             >
               <span
                 className={`text-lg font-medium ${
-                  isOpen ? "text-[rgb(151,91,236)]" : "text-black"
+                  isOpen ? "text-[rgb(151,91,236)] font-medium text-2xl" : "text-black font-medium text-2xl"
                 }`}
               >
                 {faq.question}
@@ -76,7 +76,7 @@ export default function FAQ() {
                 isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
               }`}
             >
-              <div className="overflow-hidden px-6 pb-6 text-gray-700 text-base">
+              <div className="overflow-hidden px-6 pb-6 text-black text-base ">
                 {faq.answer}
               </div>
             </div>
