@@ -9,6 +9,9 @@ import sharepoint from '@/public/photos/sharePoint.svg';
 import github from '@/public/photos/github.svg';
 import jira from '@/public/photos/jira.svg';
 import dropbox from '@/public/photos/dropbox.svg';
+import slack from '@/public/photos/slack.svg';
+import zoom from '@/public/photos/zoom.svg';
+import microteam from '@/public/photos/users.svg'
 
 const Integrations = () => {
   const tools = [
@@ -53,9 +56,30 @@ const Integrations = () => {
       tags: ["ELT", "No Code", "Destinations"],
       accent: "green",
     },
+    {
+      icon: slack,
+      name: "Slack",
+      description: "Get instant tools alerts about new survey integrations.",
+      tags: ["ELT", "No Code", "Destinations"],
+      accent: "green",
+    },
+    {
+      icon: microteam,
+      name: "Micro Team",
+      description: "Get instant tools alerts about new survey integrations.",
+      tags: ["ELT", "No Code", "Destinations"],
+      accent: "green",
+    },
+    {
+      icon: zoom,
+      name: "Zoom",
+      description: "Get instant tools alerts about new survey integrations.",
+      tags: ["ELT", "No Code", "Destinations"],
+      accent: "green",
+    },
   ];
 
-  const [active, setActive] = useState<number | null>(null); // ✅ FIXED
+  const [active, setActive] = useState<number | null>(null); 
 
   return (
     <div>
@@ -95,29 +119,36 @@ const Integrations = () => {
           <div className='grid grid-cols-[repeat(auto-fit,minmax(385px,1fr))] gap-6'>
             {integrations.map((item, index) => (
               <div key={index} className="w-[385px] h-[351px] bg-white rounded-xl p-6">
-                <div className='flex gap-3 items-center'>
+                <div className='flex gap-3 items-center mb-9'>
                   <Image src={item.icon} alt={item.name} width={32} height={32}/>
-                  <p className='text-lg font-semibold'>{item.name}</p>
+                  <p className='text-xl font-semibold'>{item.name}</p>
               </div>
-              <p>{item.description}</p>
-              <div className='flex gap-6 items-center justify-center flex-wrap'>
+              <p className='text-[21px] text-[rgba(51,51,51,1)] font-light'>{item.description}</p>
+              <div className='flex gap-5 items-center justify-center flex-wrap'>
                 {item.tags.map((tag, tagIndex) =>(
-                  <span key={tagIndex} className='text-xs px-3 py-1 rounded-full bg-gray-100 text-gray-600'>
+                  <span key={tagIndex} className='text-[16px] text-gray-600 px-3 mt-7 rounded-full bg-gray-100 '>
                     {tag}
                   </span>
                 ))}
-                 <div className="flex items-center justify-between mt-8">
-                    <button className="text-sm font-medium hover:underline">
+                 <div className="flex items-center gap-4 justify-between mt-8">
+                    <button className="text-lg  font-semibold w-[143px] max-h-14">
                       See more
                     </button>
 
-                    <button className="flex items-center gap-2 bg-purple-600 text-white text-sm px-4 py-2 rounded-lg">
+                    <button className="flex text-center gap-2 max-w-[191px] px-4 max-h-14 bg-[rgba(151,91,236,1)] text-white text-sm  border-[rgba(115,69,179,1)] shadow-[4px_4px_0_0_rgba(115,69,179,1)] py-2 rounded-lg">
                       + Click to install
                     </button>
                   </div>
                 </div>
               </div>
             ))}
+          </div>
+          <div className='mt-24'>
+            <p className='text-start text-[56px] font-black'>Collaborations</p>
+            <p className='text-start text-black/72 text-xl font-normal mt-5'>Build custom reports based on your Linear data</p>
+            <div>
+              {integrations.filter(( ,index) =>[])}
+            </div>
           </div>
         </div>
       </div>
