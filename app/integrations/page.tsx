@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-
+import FAQ from '../components/Faq';
 import integrate from '@/public/photos/integrate.svg';
 import zapier from '@/public/photos/zappier.svg';
 import sharepoint from '@/public/photos/sharePoint.svg';
@@ -112,7 +112,7 @@ const Integrations = () => {
       </div>
 
       {/* ANALYTICS */}
-      <section className="w-full mt-24 bg-[rgba(249,249,229,1)]">
+      <section className="w-full mt-24  py-12 bg-[rgba(249,249,229,1)]">
         <div className="max-w-[1440px] mx-auto px-28 pt-12">
           <h2 className="text-[56px] font-black">Analytics</h2>
           <p className="text-black/72 text-xl mt-5">
@@ -120,7 +120,7 @@ const Integrations = () => {
           </p>
 
           <div className="grid grid-cols-[repeat(auto-fit,minmax(385px,1fr))] gap-6 mt-10">
-            {integrations.map((item) => (
+            {integrations.slice(0,5).map((item) => (
               <div
                 key={item.name}
                 className="w-[385px] h-[351px] bg-white rounded-xl p-6"
@@ -155,10 +155,7 @@ const Integrations = () => {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* COLLABORATIONS */}
-      <section className="mt-24">
+        <section className="mt-24">
         <div className="max-w-[1440px] mx-auto px-28">
           <h2 className="text-[56px] font-black">Collaborations</h2>
           <p className="text-black/72 text-xl mt-5">
@@ -204,6 +201,11 @@ const Integrations = () => {
           </div>
         </div>
       </section>
+     </section>
+     <div className=''>
+      <FAQ />
+     </div>
+   
     </div>
   );
 };

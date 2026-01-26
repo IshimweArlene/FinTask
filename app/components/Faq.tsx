@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Plus, Minus } from "lucide-react";
+import { Plus, Minus, SearchIcon } from "lucide-react";
 
 const faqs = [
   {
@@ -37,54 +37,82 @@ export default function FAQ() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto space-y-4">
-      {faqs.map((faq, index) => {
-        const isOpen = openIndex === index;
+    <div>
+      {/* HEADER */}
+      <div className="flex flex-col items-center text-center py-24">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="border-[rgba(252,79,36,1)] bg-[rgba(252,79,36,0.08)] border-4 w-5 h-5 rounded-full" />
+          <h1 className="caveat font-light strike text-[rgba(188,188,188,1)] text-4xl">
+            FAQ
+          </h1>
+        </div>
 
-        return (
-          <div
-            key={index}
-            className={`border-2 rounded-2xl transition-all duration-300 ${
-              isOpen
-                ? "border-[rgb(151,91,236)] border-4 shadow-[8px_8px_0px_0px_rgba(115,69,179,1)] bg-[rgba(151,91,236,0.05)]"
-                : "border-gray-200"
-            }`}
-          >
-            {/* QUESTION */}
-            <button
-              onClick={() => toggle(index)}
-              className="w-full flex justify-between items-center p-6 text-left"
-            >
-              <span
-                className={`text-lg font-medium ${
-                  isOpen ? "text-[rgb(151,91,236)] font-medium text-2xl" : "text-black font-medium text-2xl"
-                }`}
-              >
-                {faq.question}
-              </span>
+        <h1 className="text-5xl text-black font-bold mb-6">
+          Frequently asked questions
+        </h1>
 
-              {isOpen ? (
-                <Minus className="shrink-0" />
-              ) : (
-                <Plus className="shrink-0" />
-              )}
-            </button>
+        <p className="text-[20px] text-black font-medium mb-8">
+          Have a question? We’re here to help you
+        </p>
 
-            {/* ANSWER */}
+        {/* SEARCH */}
+        <div className="relative w-[237px] h-[53px] border border-black/10 rounded-2xl">
+          <input
+            type="text"
+            placeholder="Search"
+            className="w-full h-full pl-12 pr-4 outline-none text-black/56 text-[16px] rounded-2xl"
+          />
+          <SearchIcon className="absolute left-4 top-1/2 -translate-y-1/2 text-black/56" />
+        </div>
+      </div>
+
+      {/* FAQ LIST */}
+      <div className="max-w-3xl mx-auto space-y-4 pb-24">
+        {faqs.map((faq, index) => {
+          const isOpen = openIndex === index;
+
+          return (
             <div
-              className={`grid transition-all duration-300 ${
-                isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+              key={index}
+              className={`rounded-2xl transition-all duration-300 border-2 ${
+                isOpen
+                  ? "border-[rgb(151,91,236)] shadow-[8px_8px_0px_0px_rgba(115,69,179,1)] bg-[rgba(151,91,236,0.05)]"
+                  : "border-gray-200"
               }`}
             >
-              <div className="overflow-hidden px-6 pb-6 text-black text-base ">
-                {faq.answer}
+              {/* QUESTION */}
+              <button
+                onClick={() => toggle(index)}
+                className="w-full flex justify-between items-center p-6 text-left"
+              >
+                <span
+                  className={`text-2xl font-medium ${
+                    isOpen
+                      ? "text-[rgb(151,91,236)]"
+                      : "text-black"
+                  }`}
+                >
+                  {faq.question}
+                </span>
+
+                {isOpen ? <Minus /> : <Plus />}
+              </button>
+
+              {/* ANSWER */}
+              <div
+                className={`grid transition-all duration-300 ${
+                  isOpen
+                    ? "grid-rows-[1fr] opacity-100"
+                    : "grid-rows-[0fr] opacity-0"
+                }`}
+              >
+                <div className="overflow-hidden px-6 pb-6 text-black text-base">
+                  {faq.answer}
+                </div>
               </div>
             </div>
-          </div>
-        );
-      })}
-      <div>
-        
+          );
+        })}
       </div>
     </div>
   );
