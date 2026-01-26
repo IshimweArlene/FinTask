@@ -2,6 +2,10 @@
 
 import { useState } from "react";
 import { Plus, Minus, SearchIcon } from "lucide-react";
+import image1 from "@/public/photos/image1.png";
+import image2 from "@/public/photos/image2.png";
+import image3 from "@/public/photos/image2.png";
+import Image from "next/image";
 
 const faqs = [
   {
@@ -113,6 +117,15 @@ export default function FAQ() {
             </div>
           );
         })}
+      </div>
+      <div className="text-center w-[565px] h-[206px] mx-auto ">
+        <div className="flex items-center justify-center -space-x-96">
+          <Image src={image1} alt="image" className="mx-auto mb-4 rounded-full"/>
+          <Image src={image2} alt="image" className="mx-auto mb-4 rounded-full"/>
+          <Image src={image1} alt="image" className="mx-auto mb-4 rounded-full"/>
+        </div>
+        <p className="text-black font-medium text-3xl mb-3">Still have an questions?</p>
+        <p className="text-black/64 text-xl">If you can't find an answer to your question in our FAQ, you can always contact us. We'll answer to you shortly!</p>
       </div>
     </div>
   );
