@@ -1,7 +1,11 @@
+'use client';
+
 import WindowsLogo from "@/public/photos/WindowsLogo.svg";
 import MacLogo from "@/public/photos/AppleLogo.svg";
 import Image from "next/image";
+import { useState } from "react";
 const Download = () => {
+  const [active, setActive] = useState <number | null>(null);
   return (
     <div>
       <div className="max-h-[670px] mx-auto">
@@ -13,18 +17,29 @@ const Download = () => {
             </div>
             <p className="font-bold text-5xl my-4">Fintask for Your Desktop.</p>
             <p className="font-normal text-lg text-black/72 mb-4">An all-in-one task management that works on your desktop and in your browser. </p>
-            <div className="flex gap-6 items-center">
-              <button className="bg-[rgba(151,91,236,1)] flex items-center gap-3 py-3 px-6 font-bold text-white text-lg rounded-2xl border-4 border-[rgba(115,69,179,1)] shadow-[5px_5px_0_0_rgba(115,69,179,1)]">
-                <div className="border-4 w-5 h-5 border-white "></div>
-                Download for Mac
+            <div className="flex gap-6 items-center mt-6">
+              <button onClick={() => setActive(1)} className={`flex items-center text-black text-lg font-semibold border-2
+                ${
+                  active === 1
+                    ? 'bg-[rgba(151,91,236,1)] py-3 px-6 rounded-2xl text-white border-[rgba(115,69,179,1)] shadow-[5px_5px_0_0_rgba(115,69,179,1)]'
+                    : 'bg-white py-3 px-6 rounded-2xl  border-black/10 hover:bg-purple-100 shadow-[5px_5px_0_0_rgba(0,0,0,1)]'
+                }`}>
+                <Image src={WindowsLogo} alt="Windows Logo" width={32} height={32} />
+                Windows
               </button>
-              <p className="text-gray-500 font-medium">Version 1.0.0</p>
+              <button onClick={() => setActive(2)} className={`flex items-center text-black text-lg font-semibold border-2
+                ${
+                  active === 2
+                    ? 'bg-[rgba(151,91,236,1)] py-3 px-6 rounded-2xl text-white border-[rgba(115,69,179,1)] shadow-[5px_5px_0_0_rgba(115,69,179,1)]'
+                    : 'bg-white py-3 px-6 rounded-2xl text-black border-black hover:bg-purple-100 shadow-[5px_5px_0_0_rgba(0,0,0,1)]'
+                }`}>
+                <Image src={MacLogo} alt="Mac Logo" width={32} height={32} />
+                Mac Os
+              </button>
             </div>
           </div>
           <div className="col-span-9 flex justify-center items-center">
-            <div className="relative w-[600px] h-[400px]">
-              <Image src={MacLogo} alt="Desktop App" fill className="object-contain" />  
-            </div>
+            
           </div>
         </div>
       </div>
