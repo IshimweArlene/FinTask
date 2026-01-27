@@ -118,12 +118,12 @@ export default function FAQ() {
           );
         })}
       </div>
-      <div className="text-center w-[565px] h-[206px] mx-auto ">
-        <div className="flex items-center justify-center -space-x-96">
-          <Image src={image1} alt="image" className="mx-auto mb-4 rounded-full"/>
-          <Image src={image2} alt="image" className="mx-auto mb-4 rounded-full"/>
-          <Image src={image1} alt="image" className="mx-auto mb-4 rounded-full"/>
-        </div>
+      <div className="flex items-center justify-center w-[124px] h-14 mx-auto mb-4 ">
+        <Image src={image1} alt="image" className="mx-auto rounded-full -mr-4"/>
+        <Image src={image2} alt="image" className="mx-auto rounded-full relative z-30"/>
+        <Image src={image1} alt="image" className="mx-auto rounded-full -ml-4 relative z-20"/>
+      </div>
+      <div className="text-center w-[565px] h-[206px] mx-auto">
         <p className="text-black font-medium text-3xl mb-3">Still have an questions?</p>
         <p className="text-black/64 text-xl">If you can't find an answer to your question in our FAQ, you can always contact us. We'll answer to you shortly!</p>
       </div>
