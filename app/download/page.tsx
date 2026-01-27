@@ -2,6 +2,7 @@
 
 import WindowsLogo from "@/public/photos/WindowsLogo.svg";
 import MacLogo from "@/public/photos/AppleLogo.svg";
+import LandingComponent from "../components/landingpageComp";
 import Image from "next/image";
 import { useState } from "react";
 const Download = () => {
@@ -9,8 +10,8 @@ const Download = () => {
   return (
     <div>
       <div className="max-h-[670px] mx-auto">
-        <div className="grid grid-cols-12 pl-20">
-          <div className="col-span-3">
+        <div className="grid grid-cols-12 pl-20 items-center gap-12 overflow-hidden">
+          <div className="col-span-4">
             <div className="flex mb-4 items-center gap-3">
               <div className="border-[rgba(252,79,36,1)] bg-[rgba(252,79,36,0.08)] border-2 w-3.5 h-3.5 rounded-full "></div>
               <h1 className="caveat font-normal strike text-[rgba(188,188,188,1)] text-2xl ">Advantages</h1>
@@ -38,8 +39,8 @@ const Download = () => {
               </button>
             </div>
           </div>
-          <div className="col-span-9 flex justify-center items-center">
-            
+          <div className="col-span-8 flex justify-center items-center">
+            <LandingComponent />
           </div>
         </div>
       </div>
