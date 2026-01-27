@@ -202,10 +202,7 @@ const Integrations = () => {
         </div>
       </section>
      </section>
-     <div className=''>
-      <FAQ />
-     </div>
-   
+      <FAQ />   
     </div>
   );
 };

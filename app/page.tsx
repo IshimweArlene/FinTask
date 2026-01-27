@@ -64,9 +64,9 @@ const Landing = () => {
       </div>
       <div>
         <Features />
-        {/* <LandingComponent /> */}  
-        {/* <FloatingCard1/> */}
-        {/* <FloatingCard2/> */}
+        <LandingComponent /> 
+        {/* <FloatingCard1/> 
+        <FloatingCard2/> */}
       </div>
       <div className="my-20">
         <h1 className="text-2xl text-gray-500 my-8 text-center">Our native plants are listed below integrations</h1>
