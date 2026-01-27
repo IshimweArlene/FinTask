@@ -11,7 +11,7 @@ const LandingComponent = () => {
 
         </div>
         <div className='px-14 py-12'>
-          <div className='flex items-center justify-between'>
+          <div className='flex items-center justify-between mb-12'>
             <div className='flex items-center text-black text-[14.03px] gap-2'>
               <ArrowLeft size={12} color='black' />
               <ArrowRight size={12} color='gray' />
@@ -19,6 +19,23 @@ const LandingComponent = () => {
               /Landing
             </div>
             <div>
+
+            </div>
+          </div>
+          <div className='flex justify-between items-center'>
+            <div>
+              <p className='text-black/88 text-[15.58px] mb-2 '>🎒 Web Design </p>
+              <p className='font-semibold text-black text-[34.28px]'>Fintask Landing Page</p>
+            </div>
+            <div className='flex justify-between items-center'>
+              <div>
+                <p className='font-medium text-black text-[24.93px]'>ORM</p>
+                <p className='text-black/64 text-[14.03px] mb-2 '>COMPANY</p>
+              </div>
+              <div>
+                <p className='font-medium text-black text-[24.93px]'>15 JUL 2022</p>
+                <p className='text-black/64 text-[14.03px] mb-2 '>START DATE </p>
+              </div>
               
             </div>
           </div>
