@@ -41,6 +41,7 @@ const LandingComponent = () => {
           <div className='flex px-2 border-b-2 border-black/88'>
             <div className='flex items-center gap-2'>
               <BarChartBigIcon size={16} color='black' />
+              <div></div>
             </div>
           </div>
         </div>
