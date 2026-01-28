@@ -1,6 +1,15 @@
 'use client';
-import { ArrowLeft, ArrowRight, BarChartBigIcon } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Plus} from 'lucide-react';
+import CalenderBank from '@/public/photos/landingComp/CalendarBlank.svg'
+import Calendar from '@/public/photos/landingComp/CalendarBlank.png'
+import Clock from '@/public/photos/landingComp/Clock.svg'
+import Download from '@/public/photos/landingComp/Download.svg'
+import GearSix from '@/public/photos/landingComp/GearSix.svg'
+import Table from '@/public/photos/landingComp/Table.svg'
+import Trash from '@/public/photos/landingComp/Trash.svg'
+import Tray from '@/public/photos/landingComp/Tray.svg'
 import { useState } from 'react';
+import Image from 'next/image';
 
 const LandingComponent = () => {
  
@@ -38,10 +47,21 @@ const LandingComponent = () => {
               </div>              
             </div>
           </div>
-          <div className='flex px-2 border-b-2 border-black/88'>
-            <div className='flex items-center gap-2'>
-              <BarChartBigIcon size={16} color='black' />
-              <div></div>
+          <div className='flex gap-3 border-b-2 border-black/88'>
+            <div className='flex items-center gap-3'>
+              <Image src={CalenderBank} alt='CalenderBank' />
+              <div className='h-2.5 w-[111px] bg-[rgba(247,247,247,1)] rounded-2xl'/>
+            </div>
+            <div className='flex items-center gap-3'>
+              <Image src={Table} alt='CalenderBank' />
+              <div className='h-2.5 w-[111px] bg-[rgba(247,247,247,1)] rounded-2xl'/>
+            </div>
+            <div className='flex items-center gap-3 text-black font-medium text-[18.71px] '>
+              <Image src={Calendar} alt='CalenderBank' />
+              Calendar View
+            </div>
+            <div>
+              <Plus size={24.93} color='black' className='bg-black/4 p-1 shrink-0 rounded-full' />
             </div>
           </div>
         </div>
