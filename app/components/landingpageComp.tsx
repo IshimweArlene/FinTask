@@ -69,58 +69,64 @@ const LandingComponent = () => {
               <MoreHorizontal size={24.93} color='black' />
             </div>
           </div>
-          <div className="bg-white p-3 rounded-r-2xl rounded-bl-2xl">
+          <div className="bg-white p-3 rounded-r-2xl rounded-bl-2xl mt-6 mb-4">
             <div className="flex justify-between">
               <div className="flex items-center">
                 <ChevronDown fill="black" size={18} className="rotate-270" />
-                <p className="text-[13px] font-bold">November 15</p>
+                <p className="text-[28.05px] font-semibold">November 15</p>
               </div>
-              <div className="bg-gray-300 w-fit flex items-center p-2 gap-3 rounded-xl">
-                <button onClick={() => setActive("day")} className={active === "day" ? "text-black font-semibold bg-white px-2 rounded-md" : "text-gray-400" }>
+              <div className="bg-[rgba(243,243,243,1)] w-fit flex items-center p-2 gap-3 rounded-lg">
+                <button onClick={() => setActive("day")} className={active === "day" ? "text-black font-medium bg-white text-[14.03px] px-2 py-1 rounded-md" : "text-[rgba(161,161,161,1)]" }>
                   Day
                 </button>
-                <button onClick={() => setActive("week")} className={ active === "week" ? "text-black font-semibold bg-white px-2 rounded-md" : "text-gray-400"}>
+                <button onClick={() => setActive("week")} className={ active === "week" ? "text-black font-medium bg-white text-[14.03px] px-2 rounded-md" : "text-[rgba(161,161,161,1)]" }>
                   Week
                 </button>
-                <button onClick={() => setActive("month")} className={ active === "month" ? "text-black font-semibold bg-white px-2 rounded-md" : "text-gray-400"}>
+                <button onClick={() => setActive("month")} className={ active === "month" ? "text-black font-medium bg-white text-[14.03px] px-2 rounded-md" : "text-[rgba(161,161,161,1)]" }>
                   Month
                 </button>
               </div>
             </div>
 
-            <div className="flex items-center gap-4 pr-2 mt-6">
-              <h1 className="text-gray-400 text-xs">08:00 AM</h1>
-              <div className="flex-1 h-[0.5px] bg-gray-300"></div>
-            </div>
-
-            <div className="flex ml-[66px] -mt-2 border-[rgba(243,176,255,1)] border-2 items-center gap-4 w-40 py-4 px-2 rounded-md bg-[rgba(252,233,255,1)]">
+            <div className="flex items-center gap-6  mt-6">
+              <div className='h-3.5 w-[76px] bg-[rgba(247,247,247,1)] rounded-2xl'/>
               <div>
-                <h1 className="text-[8px]">Fintask</h1>
-                <h1 className="text-xs font-black">Developement</h1>
-              </div>
-              <div className="relative flex items-center gap-2 bg-transparent rounded-full py-1 w-fit">
-                <img src={image1.src} className="w-[17px] h-[17px] rounded-full" />
-                <img src={image2.src} className="w-3.5 h-3.5 rounded-full border-white border-2 -ml-3" />
-                <span className="text-[6px] flex justify-center items-center h-3.5 w-3.5 rounded-full border-white border font-semibold bg-white/20 backdrop-blur-md text-gray-700 -ml-3">3+ </span>
+                <div className=" h-0 border-[1.95px] border-black/7 w-[617.88px] mt-5 "/>
+                <div className="flex border-[rgba(243,176,255,1)] border-[0.78px] items-center gap-4 w-[229.07px] h-[81.81px] p-[18.7px] rounded-md bg-[rgba(252,233,255,1)]">
+                  
+                  <div>
+                    <h1 className="text-[12.47px] text-black/64">Fintask</h1>
+                    <h1 className="text-[18.7px] font-semibold">Developement</h1>
+                  </div>
+                  <div className="relative flex items-center gap-2 bg-transparent rounded-full py-1 w-fit">
+                    <img src={image1.src} className="w-[24.93px] h-[24.93px] rounded-full" />
+                    <img src={image2.src} className="w-[24.93px] h-[24.93px] rounded-full border-white border-2 -ml-4.5" />
+                    <span className="text-[9.35px] text-black/88 flex justify-center items-center h-[24.93px] w-[24.93] rounded-full border-white border font-semibold bg-white/20 backdrop-blur-md -ml-2">3+ </span>
+                  </div>
+                </div>                
+              </div>                
+            </div>
+            <div>
+              <div className=" h-0 border-[1.95px] border-black/7 w-[617.88px] mt-5  relative left-24"/>
+              <div className="flex ml-36 -mt-8 border-[rgba(167,195,209,1)] border-[0.78px] items-center justify-between gap-4 w-[432px] h-[75px] py-2 px-2 rounded-xs bg-[rgba(225,251,254,1)] relative left-56 bottom-3">
+                <div>
+                  <h1 className="text-[12.47px] text-black/64">Fintask</h1>
+                  <h1 className="text-[18.71px] font-semibold">Ux copywrite</h1>
+                </div>
+                <div className="relative flex items-center gap-2 bg-transparent rounded-full py-1 w-fit">
+                  <img src={image1.src} className="w-[24.93px] h-[24.93px] rounded-full" />
+                  <img src={image2.src} className="w-[24.93px] h-[24.93px] rounded-full border-white border-2 -ml-4.5" />
+                  <span className="text-[9.35px] text-black/88 flex justify-center items-center h-[24.93px] w-[24.93] rounded-full border-white border font-semibold bg-white/20 backdrop-blur-md -ml-2">3+ </span>
+                </div>
               </div>
             </div>
-
+                        
             <div className="flex items-center gap-4 pr-2 mt-6">
               <h1 className="text-gray-400 text-xs">10:00 AM</h1>
-              <div className="flex-1 h-[0.5px] bg-gray-300"></div>
+              <div className=" h-0 border-[1.95px] border-black/7 w-[617.88px] mt-5  relative left-24"/>
             </div>
 
-            <div className="flex ml-36 -mt-8 border-[rgba(167,195,209,1)] border-2 items-center gap-4 w-40 py-2 px-2 rounded-xs bg-[rgba(225,251,254,1)]">
-              <div>
-                <h1 className="text-[8px]">Fintask</h1>
-                <h1 className="text-xs font-black">Ux copywrite</h1>
-              </div>
-              <div className="relative flex items-center gap-2 bg-transparent rounded-full py-1 w-fit">
-                <img src={image1.src} className="w-[17px] h-[17px] rounded-full" />
-                <img src={image2.src} className="w-3.5 h-3.5 rounded-full border-white border-2 -ml-3" />
-                <span className="text-[6px] flex justify-center items-center h-3.5 w-3.5 rounded-full border-white border font-semibold bg-white/20 backdrop-blur-md text-gray-700 -ml-3">3+</span>
-              </div>
-            </div>
+            
 
             <div className="flex items-center gap-4 pr-2 mt-12">
               <h1 className="text-gray-400 text-xs">12:00 PM</h1>
